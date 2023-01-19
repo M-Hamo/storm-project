@@ -1,0 +1,22 @@
+<div class="flex justify-center items-center" [dir]="dir">
+  <div
+    class="flex items-center gap-1 mx-1 p-1 rounded-full overflow-hidden bg-gray-200 content dark:bg-orange-500"
+  >
+    <app-button
+      *ngFor="let btn of buttonList"
+      inputClass="
+        {{
+        selectedTab === btn?.text
+          ? 'bg-card pointer-events-none shadow bg-orange-500 text-white'
+          : 'bg-transparent text-dark'
+      }}
+      "
+      disableRipple
+      (clicked)="onChangeTab.emit(btn?.text)"
+      [icon]="btn?.icon"
+      [text]="btn?.text"
+      [matType]="ButtonTypes"
+    >
+    </app-button>
+  </div>
+</div>

@@ -1,0 +1,40 @@
+<!--  -->
+<div class="w-full min-h-screen">
+  <mat-toolbar
+    class="sticky top-0 toolbar flex justify-between items-center overflow-hidden print:hidden"
+    style="z-index: 999"
+  >
+    <div class="flex justify-center items-center sm:gap-2 gap-[2.5px]">
+      <app-button
+        [matType]="ButtonTypes.icon"
+        icon="menu"
+        (clicked)="onToggleSide()"
+      >
+      </app-button>
+
+      <app-button
+        backButton
+        [disabled]="!hasHistory"
+        [matType]="ButtonTypes.icon"
+        icon="navigate_next"
+      >
+      </app-button>
+
+      <div class="sm:font-bold font-semibold sm:text-2xl text-lg text-gray-700">
+        {{ (title$ | async) ?? pageTitle }}
+      </div>
+    </div>
+
+    <div class="sm:visible invisible h-full flex justify-center items-center">
+      <ng-content select="[header-middle]"></ng-content>
+    </div>
+
+    <div class="h-full flex justify-center items-center">
+      <ng-content select="[header-actions]"></ng-content>
+    </div>
+  </mat-toolbar>
+
+  <main class="min-h-[calc(100vh-64px)] bg-white overflow-hidden">
+    <ng-content select="[navigation-content]"></ng-content>
+  </main>
+</div>

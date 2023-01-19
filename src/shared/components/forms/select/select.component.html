@@ -1,0 +1,114 @@
+<mat-form-field
+  [dir]="direction$ | async"
+  [appearance]="appearance"
+  class="select-filed w-full"
+>
+  <mat-label>{{ label }}</mat-label>
+  <mat-select
+    no-enter-or-space
+    [placeholder]="placeholder"
+    [formControl]="control"
+    [multiple]="isMulti"
+    [compareWith]="compareWithObjects"
+    [disableOptionCentering]="true"
+    (opened)="open.emit()"
+  >
+    <mat-form-field
+      *ngIf="filterOptions"
+      [dir]="direction$ | async"
+      [appearance]="searchAppearance"
+      class="w-full"
+    >
+      <mat-label>Search</mat-label>
+      <input matInput [formControl]="searchControl" matInputAutofocus />
+      <button
+        *ngIf="searchControl.value"
+        class="text-red-600"
+        mat-icon-button
+        matSuffix
+        (click)="searchControl.reset()"
+      >
+        <mat-icon>restart_alt</mat-icon>
+      </button>
+    </mat-form-field>
+
+    <p
+      *ngIf="!isLoading"
+      class="mat-option mat-focus-indicator text-red-600"
+      (click)="resetSelect()"
+    >
+      Reset
+    </p>
+
+    <mat-select-trigger *ngIf="hasIcon" class="flex items-center">
+      <span class="w-8 mx-2"> </span>
+    </mat-select-trigger>
+
+    <ng-container *ngIf="!isLoading; else optionLoader">
+      <ng-container *ngIf="options.length; else noData">
+        <ng-container *ngIf="filterOptions; else noFilter">
+          <ng-container *ngIf="filterFront; else noFilter">
+            <mat-option
+              *ngFor="let item of options | selectSearch: searchControl.value"
+              [value]="item | bindValue: bindValue"
+            >
+              <ng-container
+                *ngTemplateOutlet="
+                  hasIcon ? itemWithIcon : defaultItem;
+                  context: { item: item }
+                "
+              ></ng-container>
+            </mat-option>
+          </ng-container>
+        </ng-container>
+      </ng-container>
+    </ng-container>
+
+    <ng-template #noFilter>
+      <mat-option
+        *ngFor="let item of options"
+        [value]="item | bindValue: bindValue"
+      >
+        <ng-container
+          *ngTemplateOutlet="
+            hasIcon ? itemWithIcon : defaultItem;
+            context: { item: item }
+          "
+        ></ng-container>
+      </mat-option>
+    </ng-template>
+
+    <ng-template #optionLoader>
+      <mat-option [clickOptions]="false">
+        <shimmer-loading [loadingsCount]="1"></shimmer-loading>
+      </mat-option>
+      <mat-option [clickOptions]="false">
+        <shimmer-loading [loadingsCount]="1"></shimmer-loading>
+      </mat-option>
+      <mat-option [clickOptions]="false">
+        <shimmer-loading [loadingsCount]="1"></shimmer-loading>
+      </mat-option>
+    </ng-template>
+  </mat-select>
+  <mat-error *ngIf="control.touched && control.errors">{{
+    errorMessage
+  }}</mat-error>
+  <mat-hint *ngIf="hint">{{ hint }} </mat-hint>
+</mat-form-field>
+
+<ng-template #defaultItem let-item="item">
+  <span class="text-capitalize">{{ item.name }}</span>
+</ng-template>
+
+<ng-template #itemWithIcon let-item="item">
+  <div class="flex justify-start items-center">
+    <span class="w-8 mx-2"> </span>
+    <span class="text-capitalize"> {{ item.id }}</span>
+  </div>
+</ng-template>
+
+<ng-template #noData>
+  <div class="flex justify-center items-center p-2 text-base font-medium">
+    {{ noDataSearchPlaceHolder }}
+  </div></ng-template
+>

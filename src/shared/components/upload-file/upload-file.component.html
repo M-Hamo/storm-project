@@ -1,0 +1,23 @@
+<ngx-dropzone
+  class="w-full h-full flex justify-center items-center"
+  style="height: 100% !important"
+  accept=".csv, application/vnd.openxmlformats-officedocument.spreadsheetml.sheet, application/vnd.ms-excel"
+  [multiple]="false"
+  (change)="onSelectFile($event)"
+>
+  <ngx-dropzone-label class="w-full flex justify-center items-center">
+    <img
+      class="sm:w-1/6 w-1/3"
+      src="assets/images/upload-file.svg"
+      alt="تجميل الملف"
+    />
+  </ngx-dropzone-label>
+  <ngx-dropzone-preview
+    class="w-auto m-auto"
+    *ngFor="let file of files"
+    [removable]="true"
+    (removed)="onRemoveFile(file)"
+  >
+    <ngx-dropzone-label>{{ file?.name }} ({{ file?.type }})</ngx-dropzone-label>
+  </ngx-dropzone-preview>
+</ngx-dropzone>
