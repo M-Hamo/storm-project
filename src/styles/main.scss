@@ -1,7 +1,8 @@
 @import "tailwend";
+@import "variables";
+@import "reboot";
 @import "scrollbar";
+@import "base";
 
 :root {
-  --nav-bg: #f8f8f8;
-  --nav-border: #d3d3d3;
 }
