@@ -6,9 +6,11 @@ import { AppComponent } from './app.component';
 import { ServiceWorkerModule } from '@angular/service-worker';
 import { PaymentProcessComponent } from './payment-process/payment-process.component';
 import { CreateAccountComponent } from './create-account/create-account.component';
+import { CompanyDetailsComponent } from './company-details/company-details.component';
+import { SubscriptionPlanComponent } from './subscription-plan/subscription-plan.component';
 
 @NgModule({
-  declarations: [AppRoutingModule.Components, PaymentProcessComponent, CreateAccountComponent],
+  declarations: [AppRoutingModule.Components, PaymentProcessComponent, CreateAccountComponent, CompanyDetailsComponent, SubscriptionPlanComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
