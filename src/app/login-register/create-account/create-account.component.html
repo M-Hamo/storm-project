@@ -1,0 +1,104 @@
+<section class="h-full w-full grid md:grid-cols-3 grid-cols-1">
+  <div
+    class="py-3 px-4 flex flex-col justify-center items-start gap-2 bg-[#5252E2] md:order-1 order-2"
+  >
+    <img class="w-5 h-5" src="assets/icons/noun-tips-2378579.svg" alt="info" />
+    <span
+      class="text-white sm:text-[.75em] text-sm font-semibold uppercase break-words"
+    >
+      IMPROVE OVERALL PROGRAM EFFECTIVENESS AND PROCESS MATURITY.
+    </span>
+  </div>
+
+  <div
+    class="py-3 px-4 md:col-span-2 col-span-3 flex flex-col justify-start items-stretch sm:gap-3 gap-2 md:order-2 order-1"
+  >
+    <!-- Progress bar -->
+    <div class="h-2 flex justify-start items-center bg-[#F0E6FF] rounded-md">
+      <!-- change width based on completed form steps -->
+      <div class="h-full w-1/2 bg-[#7733FF] rounded-md"></div>
+    </div>
+
+    <!-- Form -->
+    <section
+      class="relative h-full w-full flex flex-col justify-between items-stretch md:pb-2"
+    >
+      <!-- Form title -->
+
+      <section
+        class="flex flex-col justify-between items-center gap-1 text-gray-900"
+      >
+        <span class="text-[13px] font-semibold break-words"
+          >CREATE A NEW ACCOUNT</span
+        >
+
+        <span class="text-[13px] font-normal break-words"
+          >In a few simple steps, we will create an account for you</span
+        >
+      </section>
+
+      <!-- Form -->
+      <section class="h-full flex justify-center items-center md:my-2 my-1">
+        <form
+          action=""
+          class="lg:w-2/3 w-full h-full p-0 m-0 flex flex-col justify-start items-stretch md:pt-2 pt-1"
+        >
+          <div
+            class="relative flex flex-col justify-center items-stretch md:mt-4 mt-2"
+          >
+            <label
+              class="flex justify-start items-center gap-1 px-1 text-sm font-normal -mb-[12px] z-10"
+              for="userName"
+              ><span>User name</span> <span class="text-red-600">⁕</span></label
+            >
+            <input id="userName" class="input-1 w-full z-0" type="text" />
+          </div>
+
+          <div
+            class="relative flex flex-col justify-center items-stretch md:mt-4 mt-2"
+          >
+            <label
+              class="flex justify-start items-center gap-1 px-1 text-sm font-normal -mb-[12px] z-10"
+              for="newPass"
+              ><span>New Password</span>
+              <span class="text-red-600">⁕</span></label
+            >
+            <input id="newPass" class="input-1 w-full z-0" type="text" />
+          </div>
+
+          <div
+            class="relative flex flex-col justify-center items-stretch md:mt-4 mt-2"
+          >
+            <label
+              class="flex justify-start items-center gap-1 px-1 text-sm font-normal -mb-[12px] z-10"
+              for="confirmPass"
+              ><span>Confirm New Password</span>
+              <span class="text-red-600">⁕</span></label
+            >
+            <input id="confirmPass" class="input-1 w-full z-0" type="text" />
+          </div>
+        </form>
+      </section>
+
+      <section class="flex flex-col justify-center items-stretch gap-2">
+        <div class="flex justify-center items-center">
+          <button
+            class="lg:w-2/3 w-full py-[5px] px-2 rounded-3xl flex justify-center items-center bg-[#5252e2]"
+          >
+            <span
+              class="md:text-base text-sm md:font-normal font-light text-white"
+              >Next</span
+            >
+          </button>
+        </div>
+
+        <div class="flex justify-center items-center">
+          <a class="text-gray-700 hover:text-gray-900" href="#">
+            <span class="text-sm font-light">I have account ! </span>
+            <strong>Signin</strong></a
+          >
+        </div>
+      </section>
+    </section>
+  </div>
+</section>

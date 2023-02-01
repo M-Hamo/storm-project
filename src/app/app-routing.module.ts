@@ -1,7 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { AppComponent } from './app.component';
-import { MainRegisterLoginComponent } from './main-register-login/main-register-login.component';
 
 const routes: Routes = [
   {
@@ -11,14 +10,11 @@ const routes: Routes = [
   },
   {
     path: 'login',
-    component: MainRegisterLoginComponent,
+    loadChildren: () =>
+      import('./login-register/login-register.module').then(
+        (m) => m.LoginRegisterModule
+      ),
     title: 'Login',
-  },
-
-  {
-    path: '**',
-    component: MainRegisterLoginComponent,
-    title: 'Not found page',
   },
 ];
 
@@ -27,5 +23,5 @@ const routes: Routes = [
   exports: [RouterModule],
 })
 export class AppRoutingModule {
-  public static Components = [AppComponent, MainRegisterLoginComponent];
+  public static Components = [AppComponent];
 }
