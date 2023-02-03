@@ -1,0 +1,16 @@
+<svg id="Group_11725" data-name="Group 11725" xmlns="http://www.w3.org/2000/svg" width="270" height="50" viewBox="0 0 270 50">
+  <rect id="Rectangle_1664" data-name="Rectangle 1664" width="270" height="50" rx="25" fill="#f5f5f5" opacity="0.25"/>
+  <circle id="Ellipse_395" data-name="Ellipse 395" cx="25" cy="25" r="25" transform="translate(220)" fill="#5252e2"/>
+  <g id="noun-chat-bot-1585775" transform="translate(229.5 12)">
+    <path id="Path_605" data-name="Path 605" d="M257.478,228.762a.473.473,0,1,0-.473-.473A.473.473,0,0,0,257.478,228.762Zm0,1.261a1.734,1.734,0,1,1,1.734-1.734A1.734,1.734,0,0,1,257.478,230.023Z" transform="translate(-246.449 -216.78)" fill="#fff" fill-rule="evenodd"/>
+    <path id="Path_606" data-name="Path 606" d="M394.148,230.026a1.734,1.734,0,1,1,1.734-1.734A1.734,1.734,0,0,1,394.148,230.026Zm0-1.261a.473.473,0,1,0-.473-.473A.473.473,0,0,0,394.148,228.765Z" transform="translate(-374.921 -216.783)" fill="#fff" fill-rule="evenodd"/>
+    <path id="Path_607" data-name="Path 607" d="M173.119,68.557v-1.6a1.734,1.734,0,1,0-1.261,0v1.6c-5.975.265-10.72,4.275-10.72,9.183,0,.131.005.261.012.39l-.012-.01V89.568l3.542-4.842a12.674,12.674,0,0,0,7.809,2.213c6.269,0,11.351-4.118,11.351-9.2,0-4.909-4.745-8.919-10.721-9.184Zm-.631-3.689a.473.473,0,1,1-.473.473A.473.473,0,0,1,172.488,64.868Zm0,20.81c-3.259,0-6.161-.91-8.006-2.8L162.4,85.46V77.925l.006.007c0-.064-.006-.128-.006-.192,0-4.376,4.526-7.937,10.09-7.937s10.09,3.56,10.09,7.937-4.526,7.937-10.09,7.937Z" transform="translate(-157.518 -63.607)" fill="#fff"/>
+    <path id="Path_608" data-name="Path 608" d="M267.229,342.165A17.163,17.163,0,0,1,262.1,341.1a.631.631,0,0,1,.447-1.18,16.157,16.157,0,0,0,4.678.982,11.212,11.212,0,0,0,4.2-.961.631.631,0,0,1,.542,1.139,12.379,12.379,0,0,1-4.744,1.084Z" transform="translate(-252.045 -323.308)" fill="#fff"/>
+    <path id="Path_609" data-name="Path 609" d="M553.369,255.37a.633.633,0,0,1-.631-.631v-4.132a.631.631,0,0,1,1.261,0v4.132A.632.632,0,0,1,553.369,255.37Z" transform="translate(-525.628 -238.797)" fill="#fff"/>
+    <path id="Path_610" data-name="Path 610" d="M127.579,255.37a.633.633,0,0,1-.631-.631v-4.132a.631.631,0,0,1,1.261,0v4.132A.633.633,0,0,1,127.579,255.37Z" transform="translate(-125.379 -238.797)" fill="#fff"/>
+    <path id="Path_611" data-name="Path 611" d="M578.809,282.182a.633.633,0,0,1-.631-.631v-.476a.631.631,0,1,1,1.261,0v.476A.632.632,0,0,1,578.809,282.182Z" transform="translate(-549.542 -267.437)" fill="#fff"/>
+    <path id="Path_612" data-name="Path 612" d="M101.429,282.182a.633.633,0,0,1-.631-.631v-.476a.631.631,0,1,1,1.261,0v.476A.632.632,0,0,1,101.429,282.182Z" transform="translate(-100.798 -267.437)" fill="#fff"/>
+  </g>
+  <text id="Get_Help" data-name="Get Help" transform="translate(20.5 21.119)" fill="#f5f5f5" font-size="12" font-family="Poppins-SemiBold, Poppins" font-weight="600"><tspan x="0" y="0">Get Help</tspan></text>
+  <text id="Ask_us_you_will_get_a_quick_answer" data-name="Ask us, you will get a quick answer" transform="translate(21 23)" fill="#f5f5f5" font-size="10" font-family="Poppins-Light, Poppins" font-weight="300"><tspan x="0" y="11">Ask us, you will get a quick answer</tspan></text>
+</svg>

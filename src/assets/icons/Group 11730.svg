@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="60" height="30" viewBox="0 0 60 30">
+  <defs>
+    <clipPath id="clip-path">
+      <path id="Rounded_Rectangle_7_copy" data-name="Rounded Rectangle 7 copy" d="M1444.86,66.006H1461.6a1.876,1.876,0,0,1,1.86,1.892V77.989a1.876,1.876,0,0,1-1.86,1.892H1444.86a1.876,1.876,0,0,1-1.86-1.892V67.9A1.876,1.876,0,0,1,1444.86,66.006Z" transform="translate(-1443 -66.006)" fill="#f5f7fa"/>
+    </clipPath>
+  </defs>
+  <g id="Group_11730" data-name="Group 11730" transform="translate(-0.388)">
+    <g id="Map_BG" data-name="Map BG" transform="translate(0.388)" fill="none" stroke="#fff" stroke-linejoin="round" stroke-width="1">
+      <rect width="60" height="30" rx="3" stroke="none"/>
+      <rect x="0.5" y="0.5" width="59" height="29" rx="2.5" fill="none"/>
+    </g>
+    <g id="Group_11726" data-name="Group 11726" transform="translate(10 8)">
+      <g id="Rounded_Rectangle_7_copy-2" data-name="Rounded Rectangle 7 copy" style="mix-blend-mode: normal;isolation: isolate">
+        <path id="Rounded_Rectangle_7_copy-3" data-name="Rounded Rectangle 7 copy" d="M1444.86,66.006H1461.6a1.876,1.876,0,0,1,1.86,1.892V77.989a1.876,1.876,0,0,1-1.86,1.892H1444.86a1.876,1.876,0,0,1-1.86-1.892V67.9A1.876,1.876,0,0,1,1444.86,66.006Z" transform="translate(-1443 -66.006)" fill="#f5f7fa"/>
+        <g id="Clip" clip-path="url(#clip-path)">
+          <rect id="Rectangle_20_copy_2" data-name="Rectangle 20 copy 2" width="20.462" height="2.923" transform="translate(0 5.849)" fill="#ed5565"/>
+          <rect id="Rectangle_20_copy_4" data-name="Rectangle 20 copy 4" width="20.462" height="2.923" transform="translate(0 10.95)" fill="#ed5565"/>
+          <rect id="Rectangle_20_copy_5" data-name="Rectangle 20 copy 5" width="20.462" height="2.923" transform="translate(0 -0.004)" fill="#ed5565"/>
+          <rect id="Rectangle_19" data-name="Rectangle 19" width="8.769" height="8.777" transform="translate(0 0.003)" fill="#4a89dc"/>
+        </g>
+      </g>
+      <path id="Shape_7" data-name="Shape 7" d="M1447.238,74.046c-.234.167-.37.073-.3-.209l.252-1.049a.954.954,0,0,0-.272-.856l-.764-.664c-.217-.189-.161-.35.125-.358l1.07-.03a.77.77,0,0,0,.668-.52l.335-1.147c.081-.278.227-.283.325-.01l.4,1.131a.808.808,0,0,0,.7.5l1.091.011c.286,0,.344.161.128.351l-.83.731a.908.908,0,0,0-.248.852l.265.923c.08.279-.054.383-.3.231l-.886-.55a.852.852,0,0,0-.87.028Z" transform="translate(-1443.813 -66.812)" fill="#fff"/>
+    </g>
+    <g id="Group_11722" data-name="Group 11722" transform="translate(41.3 13.9)">
+      <line id="Line_63" data-name="Line 63" x1="4.1" y2="4" transform="translate(4.1)" fill="none" stroke="#fff" stroke-linecap="round" stroke-width="1.5"/>
+      <line id="Line_64" data-name="Line 64" x2="4.1" y2="4" fill="none" stroke="#fff" stroke-linecap="round" stroke-width="1.5"/>
+    </g>
+  </g>
+</svg>
