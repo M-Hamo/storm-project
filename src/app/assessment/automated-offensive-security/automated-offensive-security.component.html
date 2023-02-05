@@ -7,15 +7,20 @@
 </section>
 
 <section
-  class="w-full h-full flex flex-col justify-start items-stretch md:gap-3 gap-1 md:py-3 py-2 md:px-14 px-3 bg-[#27273F] rounded-2xl md:mt-3 mt-2"
+  class="w-full h-full flex flex-col justify-start items-stretch md:gap-3 gap-1 md:pb-3 pb-2 bg-[#27273F] rounded-2xl md:mt-3 mt-2"
 >
   <!-- Error message -->
+  <!-- <div
+    class="md:p-5 p-3 text-start rounded-t-2xl bg-rose-900 text-white md:text-sm text-xs font-light"
+  >
+    <span>⁕</span> Some missing fields
+  </div> -->
 
   <!-- Stepper form -->
-  <assessment-stepper></assessment-stepper>
+  <assessment-stepper class="md:px-14 px-3 md:mt-3 t-2"></assessment-stepper>
 
   <!-- Navigation section -->
-  <div class="md:mt-4 mt-2">
+  <div class="md:mt-4 mt-2 md:px-14 px-3">
     <router-outlet></router-outlet>
   </div>
 </section>

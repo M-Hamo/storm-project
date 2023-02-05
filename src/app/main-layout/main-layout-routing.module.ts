@@ -4,6 +4,7 @@ import { FooterComponent } from 'src/layout/footer/footer.component';
 import { HeaderComponent } from 'src/layout/header/header.component';
 import { MainSideComponent } from 'src/layout/main-side/main-side.component';
 import { AssessmentsComponent } from '../assessment/assessments/assessments.component';
+import { AssetsDiscoveryComponent } from '../assessment/automated-offensive-security/assets-discovery/assets-discovery.component';
 import { AutomatedOffensiveSecurityComponent } from '../assessment/automated-offensive-security/automated-offensive-security.component';
 import { QuestionsStepComponent } from '../assessment/automated-offensive-security/questions-step/questions-step.component';
 import { StepperComponent } from '../assessment/automated-offensive-security/stepper/stepper.component';
@@ -40,6 +41,11 @@ const routes: Routes = [
             component: QuestionsStepComponent,
             title: 'Questions',
           },
+          {
+            path: 'assets-discovery',
+            component: AssetsDiscoveryComponent,
+            title: 'Assets discovery',
+          },
         ],
       },
     ],
@@ -60,5 +66,6 @@ export class MainLayoutRoutingModule {
     AutomatedOffensiveSecurityComponent,
     StepperComponent,
     QuestionsStepComponent,
+    AssetsDiscoveryComponent,
   ];
 }
