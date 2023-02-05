@@ -8,6 +8,7 @@ import { AssetsDiscoveryComponent } from '../assessment/automated-offensive-secu
 import { AutomatedOffensiveSecurityComponent } from '../assessment/automated-offensive-security/automated-offensive-security.component';
 import { QuestionsStepComponent } from '../assessment/automated-offensive-security/questions-step/questions-step.component';
 import { StepperComponent } from '../assessment/automated-offensive-security/stepper/stepper.component';
+import { StormRecommendationComponent } from '../assessment/automated-offensive-security/storm-recommendation/storm-recommendation.component';
 import { MainLayoutComponent } from './main-layout/main-layout.component';
 
 const routes: Routes = [
@@ -46,6 +47,11 @@ const routes: Routes = [
             component: AssetsDiscoveryComponent,
             title: 'Assets discovery',
           },
+          {
+            path: 'storm-recommendation',
+            component: StormRecommendationComponent,
+            title: 'Storm recommendation',
+          },
         ],
       },
     ],
@@ -67,5 +73,6 @@ export class MainLayoutRoutingModule {
     StepperComponent,
     QuestionsStepComponent,
     AssetsDiscoveryComponent,
+    StormRecommendationComponent,
   ];
 }
