@@ -1,7 +1,32 @@
+/*************   Stepper   *****************/
+@mixin step {
+  @apply lg:h-[50px] md:h-10 h-6 lg:w-[50px] md:w-10 w-6
+    flex justify-center items-center rounded-full md:text-3xl
+    sm:text-base text-sm md:font-extrabold font-bold;
+}
+
+.step-circle {
+  @include step();
+}
+
+.next-step-circle {
+  @apply flex flex-row justify-center items-center;
+
+  .line {
+    @apply sm:h-[3px] md:h-[4px] h-[2px] sm:w-[40px] md:w-[65px] w-[30px] -mr-2 rounded-full;
+  }
+
+  .circle {
+    @include step();
+  }
+}
+
+/*************   Inputs   *****************/
 .input-1 {
   @apply bg-transparent text-gray-700 p-2 text-sm border-b-2 border-gray-400 outline-none focus:border-[#5252E2];
 }
 
+/*************   Screens   *****************/
 @media only screen and (max-width: 1026px) {
   .hide-with-small {
     display: none;

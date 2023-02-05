@@ -1,0 +1,18 @@
+.question-card {
+  @apply flex flex-col justify-center items-start
+  gap-1 p-0 m-0 md:py-3 py-1 md:px-5 px-2 rounded-lg text-white bg-[#070723];
+
+  .input-radio {
+    @apply md:w-[15px] w-3 md:h-[15px] h-3 text-white bg-transparent border-white
+    focus:outline-none focus:ring-0 focus:ring-offset-2 checked:ring-white;
+  }
+
+  .input-label {
+    @apply md:text-sm text-xs font-light;
+  }
+}
+
+.input-text {
+  @apply py-1 px-2 md:text-base text-sm md:font-normal font-light
+  rounded-[5px] bg-[#27273F] text-white border-none;
+}
