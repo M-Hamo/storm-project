@@ -26,16 +26,54 @@
       LAUNCH ASSESSMENT
     </button>
 
-    <a href="#" class="flex justify-center items-center cursor-pointer">
+    <button
+      data-dropdown-toggle="localizationDropdown"
+      class="flex justify-center items-center cursor-pointer"
+      type="button"
+    >
       <img
         class="md:w-16 w-14 h-auto"
         src="assets/icons/Group 11730.svg"
         alt="logo"
       />
-    </a>
+    </button>
 
-    <a
+    <div
+      id="localizationDropdown"
+      class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700"
+    >
+      <ul
+        class="py-2 text-sm text-gray-700 dark:text-gray-200"
+        aria-labelledby="dropdownDefaultButton"
+      >
+        <li>
+          <a
+            href="#"
+            class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+            >Dashboard</a
+          >
+        </li>
+        <li>
+          <a
+            href="#"
+            class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+            >Settings</a
+          >
+        </li>
+        <li>
+          <a
+            href="#"
+            class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+            >Earnings</a
+          >
+        </li>
+      </ul>
+    </div>
+
+    <button
+      data-dropdown-toggle="notificationDropdown"
       class="text-gray-500 hover:text-gray-700 focus:text-gray-700 mr-4 dropdown-toggle hidden-arrow flex items-center"
+      type="button"
     >
       <svg
         aria-hidden="true"
@@ -56,11 +94,42 @@
         class="text-white bg-orange-600 absolute rounded-full text-xs -mt-2.5 ml-2 py-0 px-1.5"
         >04</span
       >
-    </a>
+    </button>
+
+    <div
+      id="notificationDropdown"
+      class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700"
+    >
+      <ul
+        class="py-2 text-sm text-gray-700 dark:text-gray-200"
+        aria-labelledby="dropdownDefaultButton"
+      >
+        <li>
+          <a
+            href="#"
+            class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+            >Dashboard</a
+          >
+        </li>
+        <li>
+          <a
+            href="#"
+            class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+            >Settings</a
+          >
+        </li>
+        <li>
+          <a
+            href="#"
+            class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+            >Earnings</a
+          >
+        </li>
+      </ul>
+    </div>
 
     <button
-      id="dropdownDefaultButton"
-      data-dropdown-toggle="dropdown"
+      data-dropdown-toggle="userInfoDropdown"
       class="flex justify-center items-center md:gap-3 gap-2"
       type="button"
     >
@@ -82,8 +151,9 @@
         alt=""
       />
     </button>
+
     <div
-      id="dropdown"
+      id="userInfoDropdown"
       class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700"
     >
       <ul
