@@ -39,7 +39,7 @@
   border-separate md:border-spacing-y-2 border-spacing-y-1;
 
   tbody tr {
-    @apply bg-[#070723] hover:cursor-pointer;
+    @apply bg-[#070723];
   }
 
   td:first-child,
