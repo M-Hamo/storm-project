@@ -20,3 +20,69 @@
 >
   SUBMIT
 </button>
+
+<!-- Toggle -->
+<label class="relative inline-flex items-center cursor-pointer">
+  <input type="checkbox" [value]="true" class="sr-only peer" />
+  <div
+    class="w-11 h-6 bg-transparent peer-focus:outline-none peer-focus:ring-0 peer-focus:ring-transparent rounded-full peer peer-checked:after:translate-x-full border-2 border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-transparent peer-checked:after:bg-blue-500"
+  ></div>
+</label>
+
+<!-- Dropdown -->
+<button
+  data-dropdown-toggle="userInfoDropdown"
+  class="flex justify-center items-center md:gap-3 gap-2"
+  type="button"
+>
+  <div class="flex justify-center items-center md:gap-2 gap-1">
+    <img
+      class="h-[45px] w-[45px] rounded-full border-[2px] border-white"
+      src="assets/images/corey-motta-467508-unsplash@2x.png"
+      alt=""
+    />
+
+    <span class="md:text-base text-sm font-medium text-white">User Name</span>
+  </div>
+
+  <img class="h-[12px] w-[12px]" src="assets/icons/Group 11729.svg" alt="" />
+</button>
+
+<div
+  id="userInfoDropdown"
+  class="z-10 hidden bg-[#27273F] divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700"
+>
+  <ul
+    class="p-2 text-sm text-gray-100 dark:text-gray-200"
+    aria-labelledby="dropdownDefaultButton"
+  >
+    <li>
+      <a
+        href="#"
+        class="block rounded-lg px-4 py-2 hover:bg-[#070723] dark:hover:bg-gray-600 dark:hover:text-white"
+        >Dashboard</a
+      >
+    </li>
+    <li>
+      <a
+        href="#"
+        class="block rounded-lg px-4 py-2 hover:bg-[#070723] dark:hover:bg-gray-600 dark:hover:text-white"
+        >Settings</a
+      >
+    </li>
+    <li>
+      <a
+        href="#"
+        class="block rounded-lg px-4 py-2 hover:bg-[#070723] dark:hover:bg-gray-600 dark:hover:text-white"
+        >Earnings</a
+      >
+    </li>
+    <li>
+      <a
+        href="#"
+        class="block rounded-lg px-4 py-2 hover:bg-[#070723] dark:hover:bg-gray-600 dark:hover:text-white"
+        >Sign out</a
+      >
+    </li>
+  </ul>
+</div>
