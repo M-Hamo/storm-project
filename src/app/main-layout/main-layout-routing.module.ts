@@ -10,6 +10,7 @@ import { QuestionsStepComponent } from '../assessment/automated-offensive-securi
 import { StepperComponent } from '../assessment/automated-offensive-security/stepper/stepper.component';
 import { StormRecommendationComponent } from '../assessment/automated-offensive-security/storm-recommendation/storm-recommendation.component';
 import { MembersComponent } from '../members/members.component';
+import { ReportsComponent } from '../reports/reports.component';
 import { SupportComponent } from '../support/support.component';
 import { MainLayoutComponent } from './main-layout/main-layout.component';
 
@@ -66,6 +67,11 @@ const routes: Routes = [
         component: MembersComponent,
         title: 'Members',
       },
+      {
+        path: 'reports',
+        component: ReportsComponent,
+        title: 'Reports',
+      },
     ],
   },
 ];
@@ -88,5 +94,6 @@ export class MainLayoutRoutingModule {
     StormRecommendationComponent,
     SupportComponent,
     MembersComponent,
+    ReportsComponent,
   ];
 }
