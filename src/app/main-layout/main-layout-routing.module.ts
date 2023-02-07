@@ -3,6 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { FooterComponent } from 'src/layout/footer/footer.component';
 import { HeaderComponent } from 'src/layout/header/header.component';
 import { MainSideComponent } from 'src/layout/main-side/main-side.component';
+import { AccountSettingsComponent } from '../account/account-settings/account-settings.component';
 import { AssessmentsComponent } from '../assessment/assessments/assessments.component';
 import { AssetsDiscoveryComponent } from '../assessment/automated-offensive-security/assets-discovery/assets-discovery.component';
 import { AutomatedOffensiveSecurityComponent } from '../assessment/automated-offensive-security/automated-offensive-security.component';
@@ -29,6 +30,11 @@ const routes: Routes = [
         path: 'assessments',
         component: AssessmentsComponent,
         title: 'Assessments',
+      },
+      {
+        path: 'settings',
+        component: AccountSettingsComponent,
+        title: 'Account settings',
       },
       {
         path: 'automated-security',
@@ -95,5 +101,6 @@ export class MainLayoutRoutingModule {
     SupportComponent,
     MembersComponent,
     ReportsComponent,
+    AccountSettingsComponent,
   ];
 }
