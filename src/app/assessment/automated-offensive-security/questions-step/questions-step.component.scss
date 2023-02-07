@@ -8,7 +8,7 @@
   }
 
   .input-label {
-    @apply md:text-sm text-xs font-light;
+    @apply md:text-sm text-xs font-light hover:cursor-pointer;
   }
 }
 
