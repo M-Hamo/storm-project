@@ -78,6 +78,15 @@ const routes: Routes = [
         component: ReportsComponent,
         title: 'Reports',
       },
+      //     {
+      //       path:"dashboard",
+
+      //   loadChildren: () =>
+      //     import('./login-register/login-register.module').then(
+      //       (m) => m.LoginRegisterModule
+      //     ),
+      //   title: 'Login',
+      // },
     ],
   },
 ];
