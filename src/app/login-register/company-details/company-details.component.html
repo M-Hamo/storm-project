@@ -41,105 +41,108 @@
       <section class="h-full flex justify-center items-center md:my-2 my-1">
         <form
           action=""
-          class="w-full h-full grid md:grid-cols-2 grid-cols-1 md:gap-3 gap-1 p-0 m-0 md:px-3 px-2 md:pt-2 pt-1"
+          class="w-full h-full grid md:grid-cols-2 grid-cols-1 md:gap-3 gap-1 p-0 m-0 md:px-3 px-2 md:pt-4 pt-1"
         >
-          <div class="flex flex-col justify-center items-stretch md:mt-4 mt-2">
+          <div class="relative z-0">
+            <input
+              type="text"
+              id="companyName"
+              class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-[#5252e2] peer"
+              placeholder=" "
+            />
             <label
-              class="flex justify-start items-center gap-1 px-1 text-sm font-normal -mb-[12px] z-10"
-              for="compName"
+              for="companyName"
+              class="absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-[#5252e2] peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
               ><span>Company name</span>
-              <span class="text-red-600">⁕</span></label
+              <span class="mx-1 text-red-600">⁕</span></label
             >
-            <input id="compName" class="input-1 w-full z-0" type="text" />
           </div>
 
-          <div class="flex flex-col justify-center items-stretch md:mt-4 mt-2">
+          <div class="relative z-0">
+            <input
+              type="text"
+              id="compWebsite"
+              class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-[#5252e2] peer"
+              placeholder=" "
+            />
             <label
-              class="flex justify-start items-center gap-1 px-1 text-sm font-normal -mb-[12px] z-10"
               for="compWebsite"
+              class="absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-[#5252e2] peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
               ><span>Company Website</span>
-              <span class="text-red-600">⁕</span></label
+              <span class="mx-1 text-red-600">⁕</span></label
             >
-            <input id="compWebsite" class="input-1 w-full z-0" type="text" />
           </div>
 
-          <div class="flex flex-col justify-center items-stretch md:mt-4 mt-2">
+          <label for="compSize" class="sr-only"
+            ><span>Company Size</span>
+            <span class="text-red-600">⁕</span></label
+          >
+          <select
+            id="compSize"
+            class="block py-2.5 px-0 w-full text-sm text-gray-500 bg-transparent border-0 border-b-2 border-gray-200 appearance-none dark:text-gray-400 dark:border-gray-700 focus:outline-none focus:ring-0 focus:border-gray-200 peer"
+          >
+            <option selected>Choose a country</option>
+            <option value="US">United States</option>
+            <option value="CA">Canada</option>
+            <option value="FR">France</option>
+            <option value="DE">Germany</option>
+          </select>
+
+          <label for="compType" class="sr-only"
+            ><span>Business Type</span>
+            <span class="text-red-600">⁕</span></label
+          >
+          <select
+            id="compType"
+            class="block py-2.5 px-0 w-full text-sm text-gray-500 bg-transparent border-0 border-b-2 border-gray-200 appearance-none dark:text-gray-400 dark:border-gray-700 focus:outline-none focus:ring-0 focus:border-gray-200 peer"
+          >
+            <option selected>Choose a country</option>
+            <option value="US">United States</option>
+            <option value="CA">Canada</option>
+            <option value="FR">France</option>
+            <option value="DE">Germany</option>
+          </select>
+
+          <div class="relative z-0">
+            <input
+              type="number"
+              id="tel1"
+              class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-[#5252e2] peer"
+              placeholder=" "
+            />
             <label
-              class="w-100 flex justify-start items-center gap-1 px-1 text-sm font-normal -mb-[12px] z-10 sr-only"
-              for="compSize"
-              ><span>Company Size</span>
-              <span class="text-red-600">⁕</span></label
-            >
-
-            <select id="compSize" class="input-1 w-100">
-              <option disabled selected>Company Size</option>
-              <option value="1">1</option>
-              <option value="2">2</option>
-              <option value="3">3</option>
-              <option value="4">4</option>
-              <option value="5">5</option>
-              <option value="6">6</option>
-              <option value="7">7</option>
-              <option value="8">8</option>
-              <option value="9">9</option>
-              <option value="10">10</option>
-              <option value="11">11</option>
-              <option value="12">12</option>
-            </select>
-          </div>
-
-          <div class="flex flex-col justify-center items-stretch md:mt-4 mt-2">
-            <label
-              class="w-100 flex justify-start items-center gap-1 px-1 text-sm font-normal -mb-[12px] z-10 sr-only"
-              for="compSize"
-              ><span>Business Type</span>
-              <span class="text-red-600">⁕</span></label
-            >
-
-            <select id="compSize" class="input-1 w-100">
-              <option disabled selected>Business Type</option>
-              <option value="1">1</option>
-              <option value="2">2</option>
-              <option value="3">3</option>
-              <option value="4">4</option>
-              <option value="5">5</option>
-              <option value="6">6</option>
-              <option value="7">7</option>
-              <option value="8">8</option>
-              <option value="9">9</option>
-              <option value="10">10</option>
-              <option value="11">11</option>
-              <option value="12">12</option>
-            </select>
-          </div>
-
-          <div class="flex flex-col justify-center items-stretch md:mt-4 mt-2">
-            <label
-              class="flex justify-start items-center gap-1 px-1 text-sm font-normal -mb-[12px] z-10"
               for="tel1"
+              class="absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-[#5252e2] peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
               ><span>Tel 1</span>
             </label>
-            <input id="tel1" class="input-1 w-full z-0" type="text" />
           </div>
 
-          <div class="flex flex-col justify-center items-stretch md:mt-4 mt-2">
+          <div class="relative z-0">
+            <input
+              type="number"
+              id="tel2"
+              class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-[#5252e2] peer"
+              placeholder=" "
+            />
             <label
-              class="flex justify-start items-center gap-1 px-1 text-sm font-normal -mb-[12px] z-10"
               for="tel2"
+              class="absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-[#5252e2] peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
               ><span>Tel 2</span>
             </label>
-            <input id="tel2" class="input-1 w-full z-0" type="text" />
           </div>
 
-          <div
-            class="md:col-span-2 flex flex-col justify-center items-stretch md:mt-4 mt-2"
-          >
+          <div class="md:col-span-2 relative z-0">
+            <input
+              type="text"
+              id="address"
+              class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-[#5252e2] peer"
+              placeholder=" "
+            />
             <label
-              class="flex justify-start items-center gap-1 px-1 text-sm font-normal -mb-[12px] z-10"
               for="address"
+              class="absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-[#5252e2] peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
               ><span>Address</span>
             </label>
-            <input id="address" class="input-1 w-full z-0" type="text" />
           </div>
         </form>
       </section>
