@@ -9,10 +9,10 @@
   <div class="flex flex-wrap justify-between items-center md:gap-3 gap-2">
     <button
       type="button"
-      data-drawer-target="drawer-navigation"
-      data-drawer-show="drawer-navigation"
+      data-drawer-target="add-new-members"
+      data-drawer-show="add-new-members"
       data-drawer-placement="right"
-      aria-controls="drawer-navigation"
+      aria-controls="add-new-members"
       class="px-8 md:py-[8px] py-1 md:text-sm text-xs md:font-normal font-light rounded-3xl text-white bg-[#5252E2]"
     >
       ADD NEW MEMBER
@@ -360,33 +360,58 @@
 </section>
 
 <!-- drawer component -->
-
-<!--   <button
-    type="button"
-    data-drawer-hide="drawer-navigation"
-    aria-controls="drawer-navigation"
-    class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm p-1.5 absolute top-2.5 right-2.5 inline-flex items-center dark:hover:bg-gray-600 dark:hover:text-white"
-  >
-    <svg
-      aria-hidden="true"
-      class="w-5 h-5"
-      fill="currentColor"
-      viewBox="0 0 20 20"
-      xmlns="http://www.w3.org/2000/svg"
-    >
-      <path
-        fill-rule="evenodd"
-        d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
-        clip-rule="evenodd"
-      ></path>
-    </svg>
-    <span class="sr-only">Close menu</span>
-  </button> -->
-
-<!-- drawer component -->
-<div
-  id="drawer-navigation"
-  class="fixed top-0 right-0 z-40 h-screen p-4 overflow-y-auto transition-transform translate-x-full bg-white w-80 dark:bg-gray-800"
+<section
+  id="add-new-members"
+  class="fixed top-0 right-0 z-40 h-screen p-4 overflow-y-auto transition-transform translate-x-full bg-[#070723] sm:w-1/2 md:w-1/4 w-3/4"
   tabindex="-1"
   aria-labelledby="drawer-right-label"
-></div>
+>
+  <div
+    class="w-full h-full flex flex-col justify-start items-stretch md:gap-3 gap-1"
+  >
+    <div class="flex justify-between items-center">
+      <div class="w-full flex flex-row justify-start items-center gap-2">
+        <span class="h-[16px] w-[3px] bg-[#5252E2] rounded-full"></span>
+        <span class="text-sm font-medium text-white">Add New Members</span>
+      </div>
+
+      <button
+        data-drawer-hide="add-new-members"
+        aria-controls="add-new-members"
+        class="flex justify-center items-center p-1 px-2 text-xl font-medium text-gray-600"
+      >
+        x
+      </button>
+    </div>
+
+    <form
+      action=""
+      class="flex flex-col justify-center items-stretch md:gap-3 gap-1 p-0 m-0 md:p-5 p-2"
+    >
+      <input class="input-2" placeholder="Name" type="text" />
+
+      <input class="input-2" placeholder="Role" type="text" />
+
+      <input class="input-2" placeholder="Email" type="email" />
+
+      <div
+        class="flex justify-center items-center md:gap-5 gap-2 md:mt-10 mt-5"
+      >
+        <button
+          data-drawer-hide="add-new-members"
+          aria-controls="add-new-members"
+          class="w-28 p-2 text-base font-medium text-[#5252E2] bg-white rounded-full"
+          type="button"
+        >
+          cancel
+        </button>
+
+        <button
+          class="w-28 p-2 text-base font-medium text-white bg-[#5252E2] rounded-full"
+        >
+          Add
+        </button>
+      </div>
+    </form>
+  </div>
+</section>
