@@ -1,362 +1,364 @@
-<section class="w-full flex flex-row justify-start items-center gap-2">
-  <span class="h-[16px] w-[3px] bg-[#5252E2] rounded-full"></span>
-  <span class="text-base font-medium text-white">Members</span>
-</section>
+<section class="md:py-5 md:px-8 py-3 px-4">
+  <section class="w-full flex flex-row justify-start items-center gap-2">
+    <span class="h-[16px] w-[3px] bg-[#5252E2] rounded-full"></span>
+    <span class="text-base font-medium text-white">Members</span>
+  </section>
 
-<section
-  class="w-full h-full flex flex-col justify-start items-stretch md:gap-3 gap-1 md:p-4 p-2 bg-[#27273F] rounded-2xl md:mt-3 mt-2"
->
-  <div class="flex flex-wrap justify-between items-center md:gap-3 gap-2">
-    <button
-      type="button"
-      data-drawer-target="add-new-members"
-      data-drawer-show="add-new-members"
-      data-drawer-placement="right"
-      aria-controls="add-new-members"
-      class="px-8 md:py-[8px] py-1 md:text-sm text-xs md:font-normal font-light rounded-3xl text-white bg-[#5252E2]"
-    >
-      ADD NEW MEMBER
-    </button>
+  <section
+    class="w-full h-full flex flex-col justify-start items-stretch md:gap-3 gap-1 md:p-4 p-2 bg-[#27273F] rounded-2xl md:mt-3 mt-2"
+  >
+    <div class="flex flex-wrap justify-between items-center md:gap-3 gap-2">
+      <button
+        type="button"
+        data-drawer-target="add-new-members"
+        data-drawer-show="add-new-members"
+        data-drawer-placement="right"
+        aria-controls="add-new-members"
+        class="px-8 md:py-[8px] py-1 md:text-sm text-xs md:font-normal font-light rounded-3xl text-white bg-[#5252E2]"
+      >
+        ADD NEW MEMBER
+      </button>
 
-    <div
-      class="flex flex-row justify-center items-center px-3 rounded-full bg-gray-600"
-    >
-      <a class="flex justify-center items-center" href="#">
-        <img src="assets/icons/search.svg" alt="" />
-      </a>
-      <input
-        class="input-2 focus:border-none focus:ring-0"
-        placeholder="Search"
-        type="text"
-      />
+      <div
+        class="flex flex-row justify-center items-center px-3 rounded-full bg-gray-600"
+      >
+        <a class="flex justify-center items-center" href="#">
+          <img src="assets/icons/search.svg" alt="" />
+        </a>
+        <input
+          class="input-2 focus:border-none focus:ring-0"
+          placeholder="Search"
+          type="text"
+        />
+      </div>
     </div>
-  </div>
 
-  <div class="relative overflow-x-auto">
-    <table class="table-1">
-      <thead class="text-xs">
-        <tr class="md:px-3 px-1">
-          <th scope="col" class="table-col">Name</th>
-          <th scope="col" class="table-col">Email address</th>
-          <th scope="col" class="table-col">Role</th>
-          <th scope="col" class="table-col">Column</th>
-          <th scope="col" class="table-col"></th>
-          <th scope="col" class="table-col"></th>
-        </tr>
-      </thead>
+    <div class="relative overflow-x-auto">
+      <table class="table-1">
+        <thead class="text-xs">
+          <tr class="md:px-3 px-1">
+            <th scope="col" class="table-col">Name</th>
+            <th scope="col" class="table-col">Email address</th>
+            <th scope="col" class="table-col">Role</th>
+            <th scope="col" class="table-col">Column</th>
+            <th scope="col" class="table-col"></th>
+            <th scope="col" class="table-col"></th>
+          </tr>
+        </thead>
 
-      <tbody>
-        <tr>
-          <td class="table-col">Lorem ipsum dolor sit</td>
-          <td class="table-col">Name@cybral.com</td>
-          <td class="table-col">IT Manager</td>
-          <td class="table-col">Lorem ipsum</td>
-          <td class="table-col">
-            <label class="relative inline-flex items-center cursor-pointer">
-              <input type="checkbox" value="" class="sr-only peer" />
-              <div
-                class="w-11 h-6 bg-transparent peer-focus:outline-none peer-focus:ring-0 peer-focus:ring-transparent rounded-full peer peer-checked:after:translate-x-full border-2 border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-transparent peer-checked:after:bg-[#5252E2]"
-              ></div>
-            </label>
-          </td>
-          <td class="table-col">
-            <button
-              data-dropdown-toggle="optionsDropdown1"
-              class="flex justify-center items-center w-6 h-6"
-              type="button"
-            >
-              <img src="assets/icons/three-dots-horsental.svg" alt="" />
-            </button>
-
-            <div
-              id="optionsDropdown1"
-              class="z-999 hidden bg-[#27273F] divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700"
-            >
-              <ul
-                class="p-2 text-sm text-gray-100 dark:text-gray-200"
-                aria-labelledby="dropdownDefaultButton"
+        <tbody>
+          <tr>
+            <td class="table-col">Lorem ipsum dolor sit</td>
+            <td class="table-col">Name@cybral.com</td>
+            <td class="table-col">IT Manager</td>
+            <td class="table-col">Lorem ipsum</td>
+            <td class="table-col">
+              <label class="relative inline-flex items-center cursor-pointer">
+                <input type="checkbox" value="" class="sr-only peer" />
+                <div
+                  class="w-11 h-6 bg-transparent peer-focus:outline-none peer-focus:ring-0 peer-focus:ring-transparent rounded-full peer peer-checked:after:translate-x-full border-2 border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-transparent peer-checked:after:bg-[#5252E2]"
+                ></div>
+              </label>
+            </td>
+            <td class="table-col">
+              <button
+                data-dropdown-toggle="optionsDropdown1"
+                class="flex justify-center items-center w-6 h-6"
+                type="button"
               >
-                <li>
-                  <a
-                    href="#"
-                    class="block rounded-lg px-4 py-2 hover:bg-[#070723] dark:hover:bg-gray-600 dark:hover:text-white"
-                    >Dashboard</a
-                  >
-                </li>
-                <li>
-                  <a
-                    href="#"
-                    class="block rounded-lg px-4 py-2 hover:bg-[#070723] dark:hover:bg-gray-600 dark:hover:text-white"
-                    >Settings</a
-                  >
-                </li>
-                <li>
-                  <a
-                    href="#"
-                    class="block rounded-lg px-4 py-2 hover:bg-[#070723] dark:hover:bg-gray-600 dark:hover:text-white"
-                    >Earnings</a
-                  >
-                </li>
-                <li>
-                  <a
-                    href="#"
-                    class="block rounded-lg px-4 py-2 hover:bg-[#070723] dark:hover:bg-gray-600 dark:hover:text-white"
-                    >Sign out</a
-                  >
-                </li>
-              </ul>
-            </div>
-          </td>
-        </tr>
-        <tr>
-          <td class="table-col">Lorem ipsum dolor sit</td>
-          <td class="table-col">Name@cybral.com</td>
-          <td class="table-col">IT Manager</td>
-          <td class="table-col">Lorem ipsum</td>
-          <td class="table-col">
-            <label class="relative inline-flex items-center cursor-pointer">
-              <input type="checkbox" value="" class="sr-only peer" checked />
+                <img src="assets/icons/three-dots-horsental.svg" alt="" />
+              </button>
+
               <div
-                class="w-11 h-6 bg-transparent peer-focus:outline-none peer-focus:ring-0 peer-focus:ring-transparent rounded-full peer peer-checked:after:translate-x-full border-2 border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-transparent peer-checked:after:bg-[#5252E2]"
-              ></div>
-            </label>
-          </td>
-          <td class="table-col">
-            <button
-              data-dropdown-toggle="optionsDropdown2"
-              class="flex justify-center items-center w-6 h-6"
-              type="button"
-            >
-              <img src="assets/icons/three-dots-horsental.svg" alt="" />
-            </button>
-
-            <div
-              id="optionsDropdown2"
-              class="z-999 hidden bg-[#27273F] divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700"
-            >
-              <ul
-                class="p-2 text-sm text-gray-100 dark:text-gray-200"
-                aria-labelledby="dropdownDefaultButton"
+                id="optionsDropdown1"
+                class="z-999 hidden bg-[#27273F] divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700"
               >
-                <li>
-                  <a
-                    href="#"
-                    class="block rounded-lg px-4 py-2 hover:bg-[#070723] dark:hover:bg-gray-600 dark:hover:text-white"
-                    >Dashboard</a
-                  >
-                </li>
-                <li>
-                  <a
-                    href="#"
-                    class="block rounded-lg px-4 py-2 hover:bg-[#070723] dark:hover:bg-gray-600 dark:hover:text-white"
-                    >Settings</a
-                  >
-                </li>
-                <li>
-                  <a
-                    href="#"
-                    class="block rounded-lg px-4 py-2 hover:bg-[#070723] dark:hover:bg-gray-600 dark:hover:text-white"
-                    >Earnings</a
-                  >
-                </li>
-                <li>
-                  <a
-                    href="#"
-                    class="block rounded-lg px-4 py-2 hover:bg-[#070723] dark:hover:bg-gray-600 dark:hover:text-white"
-                    >Sign out</a
-                  >
-                </li>
-              </ul>
-            </div>
-          </td>
-        </tr>
-        <tr>
-          <td class="table-col">Lorem ipsum dolor sit</td>
-          <td class="table-col">Name@cybral.com</td>
-          <td class="table-col">IT Manager</td>
-          <td class="table-col">Lorem ipsum</td>
-          <td class="table-col">
-            <label class="relative inline-flex items-center cursor-pointer">
-              <input type="checkbox" value="" class="sr-only peer" />
+                <ul
+                  class="p-2 text-sm text-gray-100 dark:text-gray-200"
+                  aria-labelledby="dropdownDefaultButton"
+                >
+                  <li>
+                    <a
+                      href="#"
+                      class="block rounded-lg px-4 py-2 hover:bg-[#070723] dark:hover:bg-gray-600 dark:hover:text-white"
+                      >Dashboard</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="block rounded-lg px-4 py-2 hover:bg-[#070723] dark:hover:bg-gray-600 dark:hover:text-white"
+                      >Settings</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="block rounded-lg px-4 py-2 hover:bg-[#070723] dark:hover:bg-gray-600 dark:hover:text-white"
+                      >Earnings</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="block rounded-lg px-4 py-2 hover:bg-[#070723] dark:hover:bg-gray-600 dark:hover:text-white"
+                      >Sign out</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td class="table-col">Lorem ipsum dolor sit</td>
+            <td class="table-col">Name@cybral.com</td>
+            <td class="table-col">IT Manager</td>
+            <td class="table-col">Lorem ipsum</td>
+            <td class="table-col">
+              <label class="relative inline-flex items-center cursor-pointer">
+                <input type="checkbox" value="" class="sr-only peer" checked />
+                <div
+                  class="w-11 h-6 bg-transparent peer-focus:outline-none peer-focus:ring-0 peer-focus:ring-transparent rounded-full peer peer-checked:after:translate-x-full border-2 border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-transparent peer-checked:after:bg-[#5252E2]"
+                ></div>
+              </label>
+            </td>
+            <td class="table-col">
+              <button
+                data-dropdown-toggle="optionsDropdown2"
+                class="flex justify-center items-center w-6 h-6"
+                type="button"
+              >
+                <img src="assets/icons/three-dots-horsental.svg" alt="" />
+              </button>
+
               <div
-                class="w-11 h-6 bg-transparent peer-focus:outline-none peer-focus:ring-0 peer-focus:ring-transparent rounded-full peer peer-checked:after:translate-x-full border-2 border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-transparent peer-checked:after:bg-[#5252E2]"
-              ></div>
-            </label>
-          </td>
-          <td class="table-col">
-            <button
-              data-dropdown-toggle="optionsDropdown3"
-              class="flex justify-center items-center w-6 h-6"
-              type="button"
-            >
-              <img src="assets/icons/three-dots-horsental.svg" alt="" />
-            </button>
-
-            <div
-              id="optionsDropdown3"
-              class="z-999 hidden bg-[#27273F] divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700"
-            >
-              <ul
-                class="p-2 text-sm text-gray-100 dark:text-gray-200"
-                aria-labelledby="dropdownDefaultButton"
+                id="optionsDropdown2"
+                class="z-999 hidden bg-[#27273F] divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700"
               >
-                <li>
-                  <a
-                    href="#"
-                    class="block rounded-lg px-4 py-2 hover:bg-[#070723] dark:hover:bg-gray-600 dark:hover:text-white"
-                    >Dashboard</a
-                  >
-                </li>
-                <li>
-                  <a
-                    href="#"
-                    class="block rounded-lg px-4 py-2 hover:bg-[#070723] dark:hover:bg-gray-600 dark:hover:text-white"
-                    >Settings</a
-                  >
-                </li>
-                <li>
-                  <a
-                    href="#"
-                    class="block rounded-lg px-4 py-2 hover:bg-[#070723] dark:hover:bg-gray-600 dark:hover:text-white"
-                    >Earnings</a
-                  >
-                </li>
-                <li>
-                  <a
-                    href="#"
-                    class="block rounded-lg px-4 py-2 hover:bg-[#070723] dark:hover:bg-gray-600 dark:hover:text-white"
-                    >Sign out</a
-                  >
-                </li>
-              </ul>
-            </div>
-          </td>
-        </tr>
-        <tr>
-          <td class="table-col">Lorem ipsum dolor sit</td>
-          <td class="table-col">Name@cybral.com</td>
-          <td class="table-col">IT Manager</td>
-          <td class="table-col">Lorem ipsum</td>
-          <td class="table-col">
-            <label class="relative inline-flex items-center cursor-pointer">
-              <input type="checkbox" value="" class="sr-only peer" checked />
+                <ul
+                  class="p-2 text-sm text-gray-100 dark:text-gray-200"
+                  aria-labelledby="dropdownDefaultButton"
+                >
+                  <li>
+                    <a
+                      href="#"
+                      class="block rounded-lg px-4 py-2 hover:bg-[#070723] dark:hover:bg-gray-600 dark:hover:text-white"
+                      >Dashboard</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="block rounded-lg px-4 py-2 hover:bg-[#070723] dark:hover:bg-gray-600 dark:hover:text-white"
+                      >Settings</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="block rounded-lg px-4 py-2 hover:bg-[#070723] dark:hover:bg-gray-600 dark:hover:text-white"
+                      >Earnings</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="block rounded-lg px-4 py-2 hover:bg-[#070723] dark:hover:bg-gray-600 dark:hover:text-white"
+                      >Sign out</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td class="table-col">Lorem ipsum dolor sit</td>
+            <td class="table-col">Name@cybral.com</td>
+            <td class="table-col">IT Manager</td>
+            <td class="table-col">Lorem ipsum</td>
+            <td class="table-col">
+              <label class="relative inline-flex items-center cursor-pointer">
+                <input type="checkbox" value="" class="sr-only peer" />
+                <div
+                  class="w-11 h-6 bg-transparent peer-focus:outline-none peer-focus:ring-0 peer-focus:ring-transparent rounded-full peer peer-checked:after:translate-x-full border-2 border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-transparent peer-checked:after:bg-[#5252E2]"
+                ></div>
+              </label>
+            </td>
+            <td class="table-col">
+              <button
+                data-dropdown-toggle="optionsDropdown3"
+                class="flex justify-center items-center w-6 h-6"
+                type="button"
+              >
+                <img src="assets/icons/three-dots-horsental.svg" alt="" />
+              </button>
+
               <div
-                class="w-11 h-6 bg-transparent peer-focus:outline-none peer-focus:ring-0 peer-focus:ring-transparent rounded-full peer peer-checked:after:translate-x-full border-2 border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-transparent peer-checked:after:bg-[#5252E2]"
-              ></div>
-            </label>
-          </td>
-          <td class="table-col">
-            <button
-              data-dropdown-toggle="optionsDropdown4"
-              class="flex justify-center items-center w-6 h-6"
-              type="button"
-            >
-              <img src="assets/icons/three-dots-horsental.svg" alt="" />
-            </button>
-
-            <div
-              id="optionsDropdown4"
-              class="z-999 hidden bg-[#27273F] divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700"
-            >
-              <ul
-                class="p-2 text-sm text-gray-100 dark:text-gray-200"
-                aria-labelledby="dropdownDefaultButton"
+                id="optionsDropdown3"
+                class="z-999 hidden bg-[#27273F] divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700"
               >
-                <li>
-                  <a
-                    href="#"
-                    class="block rounded-lg px-4 py-2 hover:bg-[#070723] dark:hover:bg-gray-600 dark:hover:text-white"
-                    >Dashboard</a
-                  >
-                </li>
-                <li>
-                  <a
-                    href="#"
-                    class="block rounded-lg px-4 py-2 hover:bg-[#070723] dark:hover:bg-gray-600 dark:hover:text-white"
-                    >Settings</a
-                  >
-                </li>
-                <li>
-                  <a
-                    href="#"
-                    class="block rounded-lg px-4 py-2 hover:bg-[#070723] dark:hover:bg-gray-600 dark:hover:text-white"
-                    >Earnings</a
-                  >
-                </li>
-                <li>
-                  <a
-                    href="#"
-                    class="block rounded-lg px-4 py-2 hover:bg-[#070723] dark:hover:bg-gray-600 dark:hover:text-white"
-                    >Sign out</a
-                  >
-                </li>
-              </ul>
-            </div>
-          </td>
-        </tr>
-      </tbody>
-    </table>
-  </div>
+                <ul
+                  class="p-2 text-sm text-gray-100 dark:text-gray-200"
+                  aria-labelledby="dropdownDefaultButton"
+                >
+                  <li>
+                    <a
+                      href="#"
+                      class="block rounded-lg px-4 py-2 hover:bg-[#070723] dark:hover:bg-gray-600 dark:hover:text-white"
+                      >Dashboard</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="block rounded-lg px-4 py-2 hover:bg-[#070723] dark:hover:bg-gray-600 dark:hover:text-white"
+                      >Settings</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="block rounded-lg px-4 py-2 hover:bg-[#070723] dark:hover:bg-gray-600 dark:hover:text-white"
+                      >Earnings</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="block rounded-lg px-4 py-2 hover:bg-[#070723] dark:hover:bg-gray-600 dark:hover:text-white"
+                      >Sign out</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td class="table-col">Lorem ipsum dolor sit</td>
+            <td class="table-col">Name@cybral.com</td>
+            <td class="table-col">IT Manager</td>
+            <td class="table-col">Lorem ipsum</td>
+            <td class="table-col">
+              <label class="relative inline-flex items-center cursor-pointer">
+                <input type="checkbox" value="" class="sr-only peer" checked />
+                <div
+                  class="w-11 h-6 bg-transparent peer-focus:outline-none peer-focus:ring-0 peer-focus:ring-transparent rounded-full peer peer-checked:after:translate-x-full border-2 border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-transparent peer-checked:after:bg-[#5252E2]"
+                ></div>
+              </label>
+            </td>
+            <td class="table-col">
+              <button
+                data-dropdown-toggle="optionsDropdown4"
+                class="flex justify-center items-center w-6 h-6"
+                type="button"
+              >
+                <img src="assets/icons/three-dots-horsental.svg" alt="" />
+              </button>
 
-  <nav class="flex md:justify-end justify-center items-center">
-    <ul class="flex flex-row justify-center items-center md:gap-2 gap-1">
-      <li class="flex justify-center items-center rounded shadow bg-gray-700">
-        <a href="#" class="w-full h-full md:p-3 p-2">
-          <img src="assets/icons/Group 11734.svg" alt="" />
-        </a>
-      </li>
+              <div
+                id="optionsDropdown4"
+                class="z-999 hidden bg-[#27273F] divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700"
+              >
+                <ul
+                  class="p-2 text-sm text-gray-100 dark:text-gray-200"
+                  aria-labelledby="dropdownDefaultButton"
+                >
+                  <li>
+                    <a
+                      href="#"
+                      class="block rounded-lg px-4 py-2 hover:bg-[#070723] dark:hover:bg-gray-600 dark:hover:text-white"
+                      >Dashboard</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="block rounded-lg px-4 py-2 hover:bg-[#070723] dark:hover:bg-gray-600 dark:hover:text-white"
+                      >Settings</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="block rounded-lg px-4 py-2 hover:bg-[#070723] dark:hover:bg-gray-600 dark:hover:text-white"
+                      >Earnings</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="block rounded-lg px-4 py-2 hover:bg-[#070723] dark:hover:bg-gray-600 dark:hover:text-white"
+                      >Sign out</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
 
-      <li
-        class="flex justify-center items-center rounded shadow bg-[#5252E2] text-gray-200"
-      >
-        <a
-          href="#"
-          class="w-full h-full md:px-3 px-2 md:py-[6px] py-1 text-sm font-normal"
+    <nav class="flex md:justify-end justify-center items-center">
+      <ul class="flex flex-row justify-center items-center md:gap-2 gap-1">
+        <li class="flex justify-center items-center rounded shadow bg-gray-700">
+          <a href="#" class="w-full h-full md:p-3 p-2">
+            <img src="assets/icons/Group 11734.svg" alt="" />
+          </a>
+        </li>
+
+        <li
+          class="flex justify-center items-center rounded shadow bg-[#5252E2] text-gray-200"
         >
-          1
-        </a>
-      </li>
+          <a
+            href="#"
+            class="w-full h-full md:px-3 px-2 md:py-[6px] py-1 text-sm font-normal"
+          >
+            1
+          </a>
+        </li>
 
-      <li
-        class="flex justify-center items-center rounded shadow bg-gray-600 text-gray-200"
-      >
-        <a
-          href="#"
-          class="w-full h-full md:px-3 px-2 md:py-[6px] py-1 text-sm font-normal"
+        <li
+          class="flex justify-center items-center rounded shadow bg-gray-600 text-gray-200"
         >
-          2
-        </a>
-      </li>
+          <a
+            href="#"
+            class="w-full h-full md:px-3 px-2 md:py-[6px] py-1 text-sm font-normal"
+          >
+            2
+          </a>
+        </li>
 
-      <li
-        class="flex justify-center items-center rounded shadow bg-gray-600 text-gray-200"
-      >
-        <a
-          href="#"
-          class="w-full h-full md:px-3 px-2 md:py-[6px] py-1 text-sm font-normal"
+        <li
+          class="flex justify-center items-center rounded shadow bg-gray-600 text-gray-200"
         >
-          3
-        </a>
-      </li>
+          <a
+            href="#"
+            class="w-full h-full md:px-3 px-2 md:py-[6px] py-1 text-sm font-normal"
+          >
+            3
+          </a>
+        </li>
 
-      <li
-        class="flex justify-center items-center rounded shadow bg-gray-600 text-gray-200"
-      >
-        <a
-          href="#"
-          class="w-full h-full md:px-3 px-2 md:py-[6px] py-1 text-sm font-normal"
+        <li
+          class="flex justify-center items-center rounded shadow bg-gray-600 text-gray-200"
         >
-          4
-        </a>
-      </li>
+          <a
+            href="#"
+            class="w-full h-full md:px-3 px-2 md:py-[6px] py-1 text-sm font-normal"
+          >
+            4
+          </a>
+        </li>
 
-      <li class="flex justify-center items-center rounded shadow bg-gray-700">
-        <a href="#" class="w-full h-full md:p-3 p-2">
-          <img src="assets/icons/Group 11735.svg" alt="" />
-        </a>
-      </li>
-    </ul>
-  </nav>
+        <li class="flex justify-center items-center rounded shadow bg-gray-700">
+          <a href="#" class="w-full h-full md:p-3 p-2">
+            <img src="assets/icons/Group 11735.svg" alt="" />
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </section>
 </section>
 
 <!-- drawer component -->

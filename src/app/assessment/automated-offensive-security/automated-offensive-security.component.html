@@ -1,26 +1,28 @@
-<section class="w-full flex flex-row justify-start items-center gap-2">
-  <span class="h-[16px] w-[3px] bg-[#5252E2] rounded-full"></span>
-  <span class="md:text-base text-xs font-medium text-white"
-    ><a routerLink="/layout/assessments">Assessments</a
-    ><strong class="text-lg mx-1">»</strong>Automated Offensive Security</span
-  >
-</section>
+<section class="md:py-5 md:px-8 py-3 px-4">
+  <section class="w-full flex flex-row justify-start items-center gap-2">
+    <span class="h-[16px] w-[3px] bg-[#5252E2] rounded-full"></span>
+    <span class="md:text-base text-xs font-medium text-white"
+      ><a routerLink="/layout/assessments">Assessments</a
+      ><strong class="text-lg mx-1">»</strong>Automated Offensive Security</span
+    >
+  </section>
 
-<section
-  class="w-full h-full flex flex-col justify-start items-stretch md:gap-3 gap-1 md:pb-3 pb-2 bg-[#27273F] rounded-2xl md:mt-3 mt-2"
->
-  <!-- Error message -->
-  <!-- <div
+  <section
+    class="w-full h-full flex flex-col justify-start items-stretch md:gap-3 gap-1 md:pb-3 pb-2 bg-[#27273F] rounded-2xl md:mt-3 mt-2"
+  >
+    <!-- Error message -->
+    <!-- <div
     class="md:p-5 p-3 text-start rounded-t-2xl bg-rose-900 text-white md:text-sm text-xs font-light"
   >
     <span>⁕</span> Some missing fields
   </div> -->
 
-  <!-- Stepper form -->
-  <assessment-stepper class="md:px-14 px-3 md:mt-3 t-2"></assessment-stepper>
+    <!-- Stepper form -->
+    <assessment-stepper class="md:px-14 px-3 md:mt-3 t-2"></assessment-stepper>
 
-  <!-- Navigation section -->
-  <div class="md:mt-4 mt-2 md:px-14 px-3">
-    <router-outlet></router-outlet>
-  </div>
+    <!-- Navigation section -->
+    <div class="md:mt-4 mt-2 md:px-14 px-3">
+      <router-outlet></router-outlet>
+    </div>
+  </section>
 </section>
