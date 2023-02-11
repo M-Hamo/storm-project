@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { DashboardSideBarComponent } from 'src/layout/dashboard-side-bar/dashboard-side-bar.component';
+import { AssetsComponent } from './attack-surface/assets/assets.component';
 import { DashboardLayoutComponent } from './dashboard-layout.component';
 
 const routes: Routes = [
@@ -11,8 +12,13 @@ const routes: Routes = [
     children: [
       {
         path: '',
-        redirectTo: 'assessments',
+        redirectTo: 'assets',
         pathMatch: 'full',
+      },
+      {
+        path: 'assets',
+        component: AssetsComponent,
+        title: 'Assets',
       },
     ],
   },
@@ -26,5 +32,6 @@ export class DashboardRoutingModule {
   public static Components = [
     DashboardLayoutComponent,
     DashboardSideBarComponent,
+    AssetsComponent,
   ];
 }

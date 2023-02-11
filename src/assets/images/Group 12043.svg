@@ -1,0 +1,107 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="464" height="316" viewBox="0 0 464 316">
+  <defs>
+    <filter id="Rectangle_187" x="0" y="0" width="464" height="316" filterUnits="userSpaceOnUse">
+      <feOffset dy="25" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="15" result="blur"/>
+      <feFlood flood-opacity="0.102"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Group_12043" data-name="Group 12043" transform="translate(-94 -668)">
+    <g transform="matrix(1, 0, 0, 1, 94, 668)" filter="url(#Rectangle_187)">
+      <rect id="Rectangle_187-2" data-name="Rectangle 187" width="374" height="226" rx="10" transform="translate(45 20)" fill="#0e0e29"/>
+    </g>
+    <text id="Total_across_mounths" data-name="Total across mounths" transform="translate(152 708)" fill="#fff" font-size="10" font-family="Poppins-Medium, Poppins" font-weight="500" letter-spacing="0.02em"><tspan x="0" y="0">Total across mounths</tspan></text>
+    <line id="Line_93" data-name="Line 93" y2="139.237" transform="translate(177.654 745.748)" fill="none" stroke="#e3e3e3" stroke-width="1" opacity="0.25"/>
+    <line id="Line_94" data-name="Line 94" x2="315.978" transform="translate(177.654 884.576)" fill="none" stroke="#e3e3e3" stroke-width="1" opacity="0.25"/>
+    <line id="Line_95" data-name="Line 95" x2="315.978" transform="translate(177.654 856.824)" fill="none" stroke="#e3e3e3" stroke-width="1" opacity="0.11"/>
+    <line id="Line_97" data-name="Line 97" x2="315.978" transform="translate(177.654 801.32)" fill="none" stroke="#e3e3e3" stroke-width="1" opacity="0.11"/>
+    <line id="Line_99" data-name="Line 99" x2="315.978" transform="translate(177.654 745.816)" fill="none" stroke="#e3e3e3" stroke-width="1" opacity="0.11"/>
+    <line id="Line_96" data-name="Line 96" x2="315.978" transform="translate(177.654 829.072)" fill="none" stroke="#e3e3e3" stroke-width="1" opacity="0.11"/>
+    <line id="Line_98" data-name="Line 98" x2="315.978" transform="translate(177.654 773.568)" fill="none" stroke="#e3e3e3" stroke-width="1" opacity="0.11"/>
+    <text id="_0" data-name="0" transform="translate(162.787 886.535)" fill="#d7dadb" font-size="7" font-family="Montserrat" font-weight="500"><tspan x="0" y="0">0</tspan></text>
+    <text id="_20" data-name="20" transform="translate(159 857)" fill="#d7dadb" font-size="8" font-family="Montserrat" font-weight="500"><tspan x="0" y="0">20</tspan></text>
+    <g id="Group_12057" data-name="Group 12057" transform="translate(11.968 -0.488)">
+      <rect id="Rectangle_250" data-name="Rectangle 250" width="5.284" height="102.234" transform="translate(255.031 782.488)" fill="#4791ff"/>
+      <rect id="Rectangle_251" data-name="Rectangle 251" width="5.284" height="28.413" transform="translate(264.602 856.494)" fill="#ff2323"/>
+      <text id="April" transform="translate(256 897)" fill="#d7dadb" font-size="8" font-family="Poppins-Medium, Poppins" font-weight="500" letter-spacing="0.02em"><tspan x="0" y="0">April</tspan></text>
+    </g>
+    <g id="Group_12056" data-name="Group 12056" transform="translate(16.999 -0.488)">
+      <g id="Group_12045" data-name="Group 12045" transform="translate(-32.066)">
+        <rect id="Rectangle_5333" data-name="Rectangle 5333" width="5.284" height="102.234" transform="translate(311.066 782.488)" fill="#4791ff"/>
+        <rect id="Rectangle_5332" data-name="Rectangle 5332" width="5.284" height="28.413" transform="translate(320.637 856.494)" fill="#ff2323"/>
+      </g>
+      <text id="May" transform="translate(280 897)" fill="#d7dadb" font-size="8" font-family="Poppins-Medium, Poppins" font-weight="500" letter-spacing="0.02em"><tspan x="0" y="0">May</tspan></text>
+    </g>
+    <g id="Group_12055" data-name="Group 12055" transform="translate(20.144 -0.291)">
+      <rect id="Rectangle_254" data-name="Rectangle 254" width="5.284" height="117.432" transform="translate(301.855 767.291)" fill="#4791ff"/>
+      <rect id="Rectangle_255" data-name="Rectangle 255" width="5.284" height="24.448" transform="translate(311.426 860.458)" fill="#ff2323"/>
+      <text id="June" transform="translate(302 897)" fill="#d7dadb" font-size="8" font-family="Poppins-Medium, Poppins" font-weight="500" letter-spacing="0.02em"><tspan x="0" y="0">June</tspan></text>
+    </g>
+    <g id="Group_12054" data-name="Group 12054" transform="translate(26.289 -0.31)">
+      <g id="Group_12046" data-name="Group 12046" transform="translate(75.566 0.114)">
+        <rect id="Rectangle_5331" data-name="Rectangle 5331" width="5.284" height="69.196" transform="translate(249.145 815.196)" fill="#4791ff"/>
+        <rect id="Rectangle_5330" data-name="Rectangle 5330" width="5.284" height="13.876" transform="translate(258.715 870.7)" fill="#ff2323"/>
+      </g>
+      <text id="July" transform="translate(325 897)" fill="#d7dadb" font-size="8" font-family="Poppins-Medium, Poppins" font-weight="500" letter-spacing="0.02em"><tspan x="0" y="0">July</tspan></text>
+    </g>
+    <g id="Group_12052" data-name="Group 12052" transform="translate(2.853 -0.196)">
+      <g id="Group_12050" data-name="Group 12050" transform="translate(175.002 0)">
+        <rect id="Rectangle_5331-2" data-name="Rectangle 5331" width="5.284" height="69.196" transform="translate(249.145 815.196)" fill="#4791ff"/>
+        <rect id="Rectangle_5330-2" data-name="Rectangle 5330" width="5.284" height="13.876" transform="translate(258.715 870.7)" fill="#ff2323"/>
+      </g>
+      <text id="Oct" transform="translate(425 897)" fill="#d7dadb" font-size="8" font-family="Poppins-Medium, Poppins" font-weight="500" letter-spacing="0.02em"><tspan x="0" y="0">Oct</tspan></text>
+    </g>
+    <g id="Group_12053" data-name="Group 12053" transform="translate(3.822 -0.387)">
+      <g id="Group_12051" data-name="Group 12051" transform="translate(135.111 -0.102)">
+        <rect id="Rectangle_5333-2" data-name="Rectangle 5333" width="5.284" height="102.234" transform="translate(311.066 782.488)" fill="#4791ff"/>
+        <rect id="Rectangle_5332-2" data-name="Rectangle 5332" width="5.284" height="28.413" transform="translate(320.637 856.494)" fill="#ff2323"/>
+      </g>
+      <text id="Nov" transform="translate(447 897)" fill="#d7dadb" font-size="8" font-family="Poppins-Medium, Poppins" font-weight="500" letter-spacing="0.02em"><tspan x="0" y="0">Nov</tspan></text>
+    </g>
+    <g id="Group_12047" data-name="Group 12047" transform="translate(-27.644 -0.469)">
+      <rect id="Rectangle_258" data-name="Rectangle 258" width="5.284" height="137.254" transform="translate(403.645 747.469)" fill="#4791ff"/>
+      <rect id="Rectangle_259" data-name="Rectangle 259" width="5.284" height="15.197" transform="translate(413.217 869.709)" fill="#ff2323"/>
+      <text id="Aug" transform="translate(404 897)" fill="#d7dadb" font-size="8" font-family="Poppins-Medium, Poppins" font-weight="500" letter-spacing="0.02em"><tspan x="0" y="0">Aug</tspan></text>
+    </g>
+    <g id="Group_12048" data-name="Group 12048" transform="translate(-31.999 -0.158)">
+      <rect id="Rectangle_5335" data-name="Rectangle 5335" width="5.284" height="102.234" transform="translate(434.115 782.158)" fill="#4791ff"/>
+      <rect id="Rectangle_5334" data-name="Rectangle 5334" width="5.284" height="28.413" transform="translate(443.686 856.164)" fill="#ff2323"/>
+      <text id="Sep" transform="translate(434 897)" fill="#d7dadb" font-size="8" font-family="Poppins-Medium, Poppins" font-weight="500" letter-spacing="0.02em"><tspan x="0" y="0">Sep</tspan></text>
+    </g>
+    <g id="Group_12049" data-name="Group 12049" transform="translate(10 -0.617)">
+      <rect id="Rectangle_5337" data-name="Rectangle 5337" width="5.284" height="102.234" transform="translate(465.584 782.617)" fill="#4791ff"/>
+      <rect id="Rectangle_5336" data-name="Rectangle 5336" width="5.284" height="28.413" transform="translate(475.154 856.623)" fill="#ff2323"/>
+      <text id="Dec" transform="translate(465 897)" fill="#d7dadb" font-size="8" font-family="Poppins-Medium, Poppins" font-weight="500" letter-spacing="0.02em"><tspan x="0" y="0">Dec</tspan></text>
+    </g>
+    <g id="Group_12060" data-name="Group 12060" transform="translate(0 -0.526)">
+      <rect id="Rectangle_191" data-name="Rectangle 191" width="5.284" height="69.196" transform="translate(186.094 815.526)" fill="#4791ff"/>
+      <rect id="Rectangle_192" data-name="Rectangle 192" width="5.284" height="13.876" transform="translate(195.664 871.03)" fill="#ff2323"/>
+      <text id="Jan" transform="translate(185 897)" fill="#d7dadb" font-size="8" font-family="Poppins-Medium, Poppins" font-weight="500" letter-spacing="0.02em"><tspan x="0" y="0">Jan</tspan></text>
+    </g>
+    <g id="Group_12059" data-name="Group 12059" transform="translate(2 -1.025)">
+      <rect id="Rectangle_246" data-name="Rectangle 246" width="5.284" height="87.698" transform="translate(207.563 797.025)" fill="#4791ff"/>
+      <rect id="Rectangle_247" data-name="Rectangle 247" width="5.284" height="24.448" transform="translate(217.133 860.458)" fill="#ff2323"/>
+      <text id="Feb" transform="translate(207 897)" fill="#d7dadb" font-size="8" font-family="Poppins-Medium, Poppins" font-weight="500" letter-spacing="0.02em"><tspan x="0" y="0">Feb</tspan></text>
+    </g>
+    <g id="Group_12058" data-name="Group 12058" transform="translate(6.001 -0.196)">
+      <g id="Group_12044" data-name="Group 12044" transform="translate(-19.145)">
+        <rect id="Rectangle_5331-3" data-name="Rectangle 5331" width="5.284" height="69.196" transform="translate(249.145 815.196)" fill="#4791ff"/>
+        <rect id="Rectangle_5330-3" data-name="Rectangle 5330" width="5.284" height="13.876" transform="translate(258.715 870.7)" fill="#ff2323"/>
+      </g>
+      <text id="March" transform="translate(227 897)" fill="#d7dadb" font-size="8" font-family="Poppins-Medium, Poppins" font-weight="500" letter-spacing="0.02em"><tspan x="0" y="0">March</tspan></text>
+    </g>
+    <text id="_40" data-name="40" transform="translate(158.823 829.596)" fill="#d7dadb" font-size="7" font-family="Montserrat" font-weight="500"><tspan x="0" y="0">40</tspan></text>
+    <text id="_60" data-name="60" transform="translate(158.823 801.772)" fill="#d7dadb" font-size="7" font-family="Montserrat" font-weight="500"><tspan x="0" y="0">60</tspan></text>
+    <text id="_80" data-name="80" transform="translate(158.823 775.743)" fill="#d7dadb" font-size="7" font-family="Montserrat" font-weight="500"><tspan x="0" y="0">80</tspan></text>
+    <text id="_100" data-name="100" transform="translate(158.823 748.817)" fill="#d7dadb" font-size="7" font-family="Montserrat" font-weight="500"><tspan x="0" y="0">100</tspan></text>
+    <g id="Group_82" data-name="Group 82" transform="translate(240.757 699.873)">
+      <text id="Assets_" data-name="Assets  " transform="translate(143.242 8.127)" fill="#d7dadb" font-size="8" font-family="Poppins-Regular, Poppins" letter-spacing="0.02em"><tspan x="0" y="0" xml:space="preserve">Assets  </tspan></text>
+      <text id="vulnerabilities" transform="translate(196.242 8.127)" fill="#d7dadb" font-size="8" font-family="Poppins-Regular, Poppins" letter-spacing="0.02em"><tspan x="0" y="0">vulnerabilities</tspan></text>
+      <circle id="Ellipse_85" data-name="Ellipse 85" cx="3.5" cy="3.5" r="3.5" transform="translate(129.242 2.127)" fill="#4791ff"/>
+      <circle id="Ellipse_88" data-name="Ellipse 88" cx="3.5" cy="3.5" r="3.5" transform="translate(182.242 2.127)" fill="#ff2323"/>
+    </g>
+    <line id="Line_104" data-name="Line 104" x2="374" transform="translate(139 724)" fill="none" stroke="#e3e3e3" stroke-width="1" opacity="0.1"/>
+  </g>
+</svg>
