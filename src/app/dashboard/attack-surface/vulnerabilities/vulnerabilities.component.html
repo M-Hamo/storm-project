@@ -2,7 +2,7 @@
   <span class="h-[16px] w-[3px] bg-[#5252E2] rounded-full"></span>
   <span class="md:text-base text-xs font-medium text-white"
     ><a routerLink="/layout/assessments">Attack Surface</a
-    ><strong class="text-lg mx-1">»</strong>Assets</span
+    ><strong class="text-lg mx-1">»</strong>vulnerabilities</span
   >
 </section>
 
@@ -147,56 +147,124 @@
   class="w-full grid md:grid-cols-6 grid-cols-1 justify-items-stretch md:gap-2 gap-1 md:mt-3 mt-1"
 >
   <div
-    class="max-h-[50vh] md:col-span-4 col-span-1 flex flex-col justify-start items-center md:gap-2 gap-1 md:p-4 p-2 bg-[#0e0e29] rounded-xl"
+    class="md:col-span-4 col-span-1 flex flex-col justify-start items-center md:gap-2 gap-1 p-2 bg-[#0e0e29] rounded-xl"
   >
-    <div class="w-full flex flex-start items-center text-white">
-      Organizing Assets
+    <div
+      class="w-full grid sm:grid-cols-2 lg:grid-cols-3 justify-items-stretch md:gap-3 gap-1"
+    >
+      <div class="flex justify-between items-center rounded-xl p-2 bg-gray-600">
+        <div class="flex flex-row justify-start items-center gap-2">
+          <img class="w-6 h-6" src="assets/icons/Group 17.svg" alt="" />
+          <span class="md:text-sm text-xs md:font-normal font-light text-white"
+            >RECOMMENDED ACTIONS</span
+          >
+        </div>
+        <span class="text-2xl font-bold truncate text-gray-300">14</span>
+      </div>
+
+      <div class="flex justify-between items-center rounded-xl p-2 bg-gray-600">
+        <div class="flex flex-row justify-start items-center gap-2">
+          <img class="w-6 h-6" src="assets/icons/Group 17.svg" alt="" />
+          <span class="md:text-sm text-xs md:font-normal font-light text-white"
+            >MOST CRITICAL ASSETS</span
+          >
+        </div>
+        <span class="text-2xl font-bold truncate text-gray-300">23</span>
+      </div>
+
+      <div class="flex justify-between items-center rounded-xl p-2 bg-gray-600">
+        <div class="flex flex-row justify-start items-center gap-2">
+          <img class="w-6 h-6" src="assets/icons/Group 17.svg" alt="" />
+          <span class="md:text-sm text-xs md:font-normal font-light text-white"
+            >AFFECTED ASSETS</span
+          >
+        </div>
+        <span class="text-2xl font-bold truncate text-gray-300">96</span>
+      </div>
     </div>
-    <div class="w-full flex flex-row flex-center items-stretch overflow-hidden">
-      <!-- Change this image with selected graph -->
-      <img
-        class="max-h-[285px] w-10/12"
-        src="assets/images/TinyTake by MangoApps-30-10-2022-01-57-19_PosterImage.png"
-        alt=""
-      />
 
-      <div
-        class="flex flex-col justify-start items-start md:px-5 px-3 md:gap-3 gap-2"
-      >
-        <a
-          class="flex justify-start items-center cursor-pointer md:gap-2 gap-1 text-gray-300"
-        >
-          <div class="w-4 h-4 rounded-sm bg-black"></div>
-          <span>high</span>
-        </a>
+    <div
+      class="max-h-[45vh] w-full flex justify-center items-center rounded-xl px-2 bg-[#20203B]"
+    >
+      <div class="h-full w-full relative overflow-x-auto">
+        <table class="table-1">
+          <thead class="text-xs sticky top-0 bg-[#20203B]">
+            <tr class="md:px-3 px-1">
+              <th scope="col" class="table-col">Issue</th>
+              <th scope="col" class="table-col">Severity</th>
+              <th scope="col" class="table-col">Description</th>
+              <th scope="col" class="table-col">Technology</th>
+              <th scope="col" class="table-col"></th>
+              <th scope="col" class="table-col"></th>
+            </tr>
+          </thead>
 
-        <a
-          class="flex justify-start items-center cursor-pointer md:gap-2 gap-1 text-gray-300"
-        >
-          <div class="w-4 h-4 rounded-sm bg-orange-400"></div>
-          <span>medium</span>
-        </a>
+          <tbody>
+            <!-- Make sure that you remove this *ngFor  -->
+            <tr *ngFor="let item of [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]">
+              <td class="table-col">Lorem ipsum</td>
+              <td scope="col" class="table-col">Lorem ipsum</td>
+              <td scope="col" class="table-col">Lorem ipsum dolor sit amet,</td>
+              <td scope="col" class="table-col">Lorem ipsum</td>
 
-        <a
-          class="flex justify-start items-center cursor-pointer md:gap-2 gap-1 text-gray-300"
-        >
-          <div class="w-4 h-4 rounded-sm bg-blue-400"></div>
-          <span>low</span>
-        </a>
+              <td class="table-col flex justify-center items-center">
+                <a
+                  class="w-auto md:px-3 px-2 rounded-full border-2 border-white md:text-sm text-xs font-normal hover:cursor-pointer hover:shadow"
+                >
+                  View
+                </a>
+              </td>
+              <td class="table-col">
+                <button
+                  data-dropdown-toggle="optionsDropdown1"
+                  class="flex justify-center items-center w-6 h-6"
+                  type="button"
+                >
+                  <img src="assets/icons/three-dots-horsental.svg" alt="" />
+                </button>
 
-        <a
-          class="flex justify-start items-center cursor-pointer md:gap-2 gap-1 text-gray-300"
-        >
-          <div class="w-4 h-4 rounded-sm bg-green-400"></div>
-          <span>No issues</span>
-        </a>
-
-        <a
-          class="flex justify-start items-center cursor-pointer md:gap-2 gap-1 text-gray-300"
-        >
-          <div class="w-4 h-4 rounded-sm bg-gray-300"></div>
-          <span>No information</span>
-        </a>
+                <div
+                  id="optionsDropdown1"
+                  class="z-999 hidden bg-[#27273F] divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700"
+                >
+                  <ul
+                    class="p-2 text-sm text-gray-100 dark:text-gray-200"
+                    aria-labelledby="dropdownDefaultButton"
+                  >
+                    <li>
+                      <a
+                        href="#"
+                        class="block rounded-lg px-4 py-2 hover:bg-[#070723] dark:hover:bg-gray-600 dark:hover:text-white"
+                        >Dashboard</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        class="block rounded-lg px-4 py-2 hover:bg-[#070723] dark:hover:bg-gray-600 dark:hover:text-white"
+                        >Settings</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        class="block rounded-lg px-4 py-2 hover:bg-[#070723] dark:hover:bg-gray-600 dark:hover:text-white"
+                        >Earnings</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        class="block rounded-lg px-4 py-2 hover:bg-[#070723] dark:hover:bg-gray-600 dark:hover:text-white"
+                        >Sign out</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
       </div>
     </div>
   </div>

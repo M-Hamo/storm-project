@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { DashboardSideBarComponent } from 'src/layout/dashboard-side-bar/dashboard-side-bar.component';
 import { AssetsComponent } from './attack-surface/assets/assets.component';
+import { VulnerabilitiesComponent } from './attack-surface/vulnerabilities/vulnerabilities.component';
 import { DashboardLayoutComponent } from './dashboard-layout.component';
 
 const routes: Routes = [
@@ -20,6 +21,11 @@ const routes: Routes = [
         component: AssetsComponent,
         title: 'Assets',
       },
+      {
+        path: 'vulnerabilities',
+        component: VulnerabilitiesComponent,
+        title: 'Vulnerabilities',
+      },
     ],
   },
 ];
@@ -33,5 +39,6 @@ export class DashboardRoutingModule {
     DashboardLayoutComponent,
     DashboardSideBarComponent,
     AssetsComponent,
+    VulnerabilitiesComponent,
   ];
 }
