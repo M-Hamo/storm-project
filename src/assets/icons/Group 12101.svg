@@ -1,0 +1,78 @@
+<svg id="Group_12101" data-name="Group 12101" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="28.39" height="28.392" viewBox="0 0 28.39 28.392">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#7a34f4"/>
+      <stop offset="0.344" stop-color="#6473f6"/>
+      <stop offset="0.637" stop-color="#54a2f8"/>
+      <stop offset="0.86" stop-color="#4abef9"/>
+      <stop offset="0.989" stop-color="#46c9f9"/>
+    </linearGradient>
+  </defs>
+  <g id="cloud_2_" data-name="cloud (2)" transform="translate(0)">
+    <g id="Group_11971" data-name="Group 11971" transform="translate(17.356 26.174)">
+      <g id="Group_11970" data-name="Group 11970">
+        <path id="Path_1865" data-name="Path 1865" d="M323.476,472H313.55a.554.554,0,1,0,0,1.109h9.925a.554.554,0,0,0,0-1.109Z" transform="translate(-312.996 -472.003)" fill="url(#linear-gradient)"/>
+      </g>
+    </g>
+    <g id="Group_11973" data-name="Group 11973" transform="translate(0 26.174)">
+      <g id="Group_11972" data-name="Group 11972">
+        <path id="Path_1866" data-name="Path 1866" d="M10.444,472H.574a.554.554,0,1,0,0,1.109h9.87a.554.554,0,1,0,0-1.109Z" transform="translate(-0.02 -472.003)" fill="url(#linear-gradient)"/>
+      </g>
+    </g>
+    <g id="Group_11975" data-name="Group 11975" transform="translate(9.563 11.343)">
+      <g id="Group_11974" data-name="Group 11974">
+        <path id="Path_1867" data-name="Path 1867" d="M177.314,204.555h-4.3a.554.554,0,1,0,0,1.109h4.3a.554.554,0,0,0,0-1.109Z" transform="translate(-172.462 -204.555)" fill="url(#linear-gradient)"/>
+      </g>
+    </g>
+    <g id="Group_11977" data-name="Group 11977" transform="translate(17.784 11.343)">
+      <g id="Group_11976" data-name="Group 11976">
+        <path id="Path_1868" data-name="Path 1868" d="M321.661,204.715a.554.554,0,1,0,.163.392A.559.559,0,0,0,321.661,204.715Z" transform="translate(-320.715 -204.553)" fill="url(#linear-gradient)"/>
+      </g>
+    </g>
+    <g id="Group_11979" data-name="Group 11979" transform="translate(15.846 11.343)">
+      <g id="Group_11978" data-name="Group 11978">
+        <path id="Path_1869" data-name="Path 1869" d="M286.724,204.715a.555.555,0,1,0,.162.392A.56.56,0,0,0,286.724,204.715Z" transform="translate(-285.777 -204.553)" fill="url(#linear-gradient)"/>
+      </g>
+    </g>
+    <g id="Group_11981" data-name="Group 11981" transform="translate(9.563 15.779)">
+      <g id="Group_11980" data-name="Group 11980">
+        <path id="Path_1870" data-name="Path 1870" d="M177.314,284.549h-4.3a.554.554,0,1,0,0,1.109h4.3a.554.554,0,0,0,0-1.109Z" transform="translate(-172.462 -284.549)" fill="url(#linear-gradient)"/>
+      </g>
+    </g>
+    <g id="Group_11983" data-name="Group 11983" transform="translate(17.784 15.779)">
+      <g id="Group_11982" data-name="Group 11982">
+        <path id="Path_1871" data-name="Path 1871" d="M321.661,284.709a.554.554,0,1,0,.163.392A.559.559,0,0,0,321.661,284.709Z" transform="translate(-320.715 -284.547)" fill="url(#linear-gradient)"/>
+      </g>
+    </g>
+    <g id="Group_11985" data-name="Group 11985" transform="translate(15.846 15.779)">
+      <g id="Group_11984" data-name="Group 11984">
+        <path id="Path_1872" data-name="Path 1872" d="M286.724,284.709a.555.555,0,1,0,.162.392A.56.56,0,0,0,286.724,284.709Z" transform="translate(-285.777 -284.547)" fill="url(#linear-gradient)"/>
+      </g>
+    </g>
+    <g id="Group_11987" data-name="Group 11987" transform="translate(9.563 20.215)">
+      <g id="Group_11986" data-name="Group 11986">
+        <path id="Path_1873" data-name="Path 1873" d="M177.314,364.543h-4.3a.554.554,0,1,0,0,1.109h4.3a.554.554,0,0,0,0-1.109Z" transform="translate(-172.462 -364.543)" fill="url(#linear-gradient)"/>
+      </g>
+    </g>
+    <g id="Group_11989" data-name="Group 11989" transform="translate(17.784 20.215)">
+      <g id="Group_11988" data-name="Group 11988">
+        <path id="Path_1874" data-name="Path 1874" d="M321.661,364.7a.554.554,0,1,0,.163.392A.559.559,0,0,0,321.661,364.7Z" transform="translate(-320.715 -364.541)" fill="url(#linear-gradient)"/>
+      </g>
+    </g>
+    <g id="Group_11991" data-name="Group 11991" transform="translate(15.846 20.215)">
+      <g id="Group_11990" data-name="Group 11990">
+        <path id="Path_1875" data-name="Path 1875" d="M286.724,364.7a.554.554,0,1,0,.162.392A.557.557,0,0,0,286.724,364.7Z" transform="translate(-285.777 -364.541)" fill="url(#linear-gradient)"/>
+      </g>
+    </g>
+    <g id="Group_11993" data-name="Group 11993" transform="translate(6.994 9.205)">
+      <g id="Group_11992" data-name="Group 11992">
+        <path id="Path_1876" data-name="Path 1876" d="M140.554,173.2a2.77,2.77,0,0,0-1.111-2.218,2.771,2.771,0,0,0-1.662-4.99h-8.872a2.771,2.771,0,0,0-1.662,4.99,2.77,2.77,0,0,0,0,4.436,2.772,2.772,0,0,0,1.662,4.99h3.874v1.539a1.663,1.663,0,1,0,1.109,0V180.4h3.889a2.772,2.772,0,0,0,1.662-4.99A2.77,2.77,0,0,0,140.554,173.2Zm-13.308-4.436a1.665,1.665,0,0,1,1.663-1.663h8.872a1.663,1.663,0,1,1,0,3.327h-8.872A1.665,1.665,0,0,1,127.246,168.759Zm6.092,15.306a.554.554,0,1,1,.554-.554A.555.555,0,0,1,133.338,184.066Zm6.106-6.434a1.665,1.665,0,0,1-1.664,1.664h-8.872a1.663,1.663,0,0,1,0-3.327h8.872A1.665,1.665,0,0,1,139.445,177.631Zm-1.664-2.772h-8.872a1.663,1.663,0,0,1,0-3.327h8.872a1.663,1.663,0,1,1,0,3.327Z" transform="translate(-126.137 -165.987)" fill="url(#linear-gradient)"/>
+      </g>
+    </g>
+    <g id="Group_11995" data-name="Group 11995">
+      <g id="Group_11994" data-name="Group 11994">
+        <path id="Path_1877" data-name="Path 1877" d="M27.219,8.586A6.759,6.759,0,0,0,24.4,6.238,9.595,9.595,0,0,0,5.988,7.768q-.129-.006-.258-.006a5.712,5.712,0,0,0-.886,11.354.561.561,0,0,0,.086.007.555.555,0,0,0,.085-1.1A4.6,4.6,0,0,1,5.73,8.871a4.657,4.657,0,0,1,.644.045A.555.555,0,0,0,7,8.441,8.485,8.485,0,0,1,23.431,6.834a.554.554,0,0,0,.318.334,5.658,5.658,0,0,1-.964,10.792.554.554,0,1,0,.222,1.086A6.767,6.767,0,0,0,27.219,8.586Z" transform="translate(-0.019)" fill="url(#linear-gradient)"/>
+      </g>
+    </g>
+  </g>
+</svg>
