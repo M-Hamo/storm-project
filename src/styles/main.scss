@@ -1,8 +1,287 @@
-@import "tailwend";
-@import "variables";
-@import "reboot";
-@import "scrollbar";
-@import "base";
+/********** tailwind **********/
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@tailwind screens;
 
-:root {
+/********** variables **********/
+$fond-size: 14px !default;
+$font-size-base: 1rem !default;
+$small-font-size: 0.875em !default;
+
+$font-family-sans-serif: "Cairo", -apple-system, BlinkMacSystemFont, "Segoe UI",
+  Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+  "Segoe UI Symbol" !default;
+
+$font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas,
+  "Liberation Mono", "Courier New", monospace !default;
+
+$font-family-base: $font-family-sans-serif;
+
+$code-font-size: $small-font-size !default;
+
+$box-shadow: 0px 11px 31px #00000029;
+
+/********** reboot **********/
+
+html,
+body {
+  font-family: sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html:lang(ar)* {
+  text-align: right;
+}
+
+.hidden {
+  display: none !important;
+}
+
+html {
+  line-height: 1.15; /* 1 */
+  -webkit-text-size-adjust: 100%; /* 2 */
+}
+
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+hr {
+  box-sizing: content-box; /* 1 */
+  height: 0; /* 1 */
+  overflow: visible; /* 2 */
+}
+
+pre {
+  font-family: $font-family-monospace; /* 1 */
+  font-size: 1em; /* 2 */
+}
+
+//noinspection ALL
+abbr[title] {
+  border-bottom: none; /* 1 */
+  text-decoration: underline; /* 2 */
+  text-decoration: underline dotted; /* 2 */
+}
+
+b,
+strong {
+  font-weight: bolder;
+}
+
+code,
+kbd,
+samp {
+  font-family: $font-family-monospace; /* 1 */
+  font-size: $code-font-size; /* 2 */
+}
+
+small {
+  font-size: 80%;
+}
+
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit; /* 1 */
+  font-size: 100%; /* 1 */
+  line-height: 1.15; /* 1 */
+  margin: 0; /* 2 */
+}
+
+button,
+input {
+  /* 1 */
+  overflow: visible;
+}
+
+button,
+select {
+  /* 1 */
+  text-transform: none;
+}
+
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button;
+}
+
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+fieldset {
+  padding: 0.35em 0.75em 0.625em;
+}
+
+legend {
+  box-sizing: border-box; /* 1 */
+  color: inherit; /* 2 */
+  display: table; /* 1 */
+  max-width: 100%; /* 1 */
+  padding: 0; /* 3 */
+  white-space: normal; /* 1 */
+}
+
+progress {
+  vertical-align: baseline;
+}
+
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+[type="search"] {
+  -webkit-appearance: textfield; /* 1 */
+  outline-offset: -2px; /* 2 */
+}
+
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+::-webkit-file-upload-button {
+  -webkit-appearance: button; /* 1 */
+  font: inherit; /* 2 */
+}
+
+details {
+  display: block;
+}
+
+summary {
+  display: list-item;
+}
+
+/********** scrollbar **********/
+::-webkit-scrollbar {
+  @apply w-[14px];
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  @apply bg-[#27273f];
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  @apply bg-[#070723] rounded-[10px] border-[4px] border-solid border-[#27273f];
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+}
+
+/********** base **********/
+/*************   Stepper   *****************/
+@mixin step {
+  @apply lg:h-[50px] md:h-10 h-6 lg:w-[50px] md:w-10 w-6
+    flex justify-center items-center rounded-full md:text-3xl
+    sm:text-base text-sm md:font-extrabold font-bold;
+}
+
+.step-circle {
+  @include step();
+}
+
+.next-step-circle {
+  @apply flex flex-row justify-center items-center;
+
+  .line {
+    @apply sm:h-[3px] md:h-[4px] h-[2px] sm:w-[40px] md:w-[65px] w-[30px] -mr-2 rounded-full;
+  }
+
+  .circle {
+    @include step();
+  }
+}
+
+/*************   Inputs   *****************/
+
+.input-1 {
+  @apply bg-transparent text-gray-700 p-2 text-sm border-b-2 border-gray-400 outline-none focus:border-[#5252E2];
+}
+
+.input-2 {
+  @apply md:px-3 px-1 w-full text-sm text-gray-100 bg-gray-600 placeholder:text-gray-300
+   rounded-lg border border-none focus:ring-[#5252E2] focus:border-[#5252E2];
+}
+
+/*************   Tables   *****************/
+
+.table-1 {
+  @apply w-full md:text-sm text-xs md:font-normal font-light text-left text-gray-100
+  border-separate md:border-spacing-y-2 border-spacing-y-1;
+
+  tbody tr {
+    @apply bg-[#070723];
+  }
+
+  td:first-child,
+  th:first-child {
+    @apply rounded-l-lg;
+  }
+
+  td:last-child,
+  th:last-child {
+    @apply rounded-r-lg;
+  }
+
+  .table-col {
+    @apply md:px-4 px-2 md:py-3 py-2;
+  }
+}
+/*************   Buttons   *****************/
+
+/*************   Modals   *****************/
+
+/*************   Screens   *****************/
+@media only screen and (max-width: 1026px) {
+  .hide-with-small {
+    display: none;
+  }
 }
