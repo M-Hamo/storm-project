@@ -10,6 +10,7 @@ import { AutomatedOffensiveSecurityComponent } from '../assessment/automated-off
 import { QuestionsStepComponent } from '../assessment/automated-offensive-security/questions-step/questions-step.component';
 import { StepperComponent } from '../assessment/automated-offensive-security/stepper/stepper.component';
 import { StormRecommendationComponent } from '../assessment/automated-offensive-security/storm-recommendation/storm-recommendation.component';
+import { NoAssessmentsComponent } from '../assessment/no-assessments/no-assessments.component';
 import { MembersComponent } from '../members/members.component';
 import { ReportsComponent } from '../reports/reports.component';
 import { SupportComponent } from '../support/support.component';
@@ -23,13 +24,18 @@ const routes: Routes = [
     children: [
       {
         path: '',
-        redirectTo: 'assessments',
+        redirectTo: 'no-assessments',
         pathMatch: 'full',
       },
       {
         path: 'assessments',
         component: AssessmentsComponent,
         title: 'Assessments',
+      },
+      {
+        path: 'no-assessments',
+        component: NoAssessmentsComponent,
+        title: 'No assessments',
       },
       {
         path: 'settings',
@@ -110,5 +116,6 @@ export class MainLayoutRoutingModule {
     MembersComponent,
     ReportsComponent,
     AccountSettingsComponent,
+    NoAssessmentsComponent,
   ];
 }
