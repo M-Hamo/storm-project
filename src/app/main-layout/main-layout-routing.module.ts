@@ -24,7 +24,7 @@ const routes: Routes = [
     children: [
       {
         path: '',
-        redirectTo: 'no-assessments',
+        redirectTo: 'assessments',
         pathMatch: 'full',
       },
       {
