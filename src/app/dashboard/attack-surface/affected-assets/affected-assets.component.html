@@ -91,6 +91,86 @@
   class="w-full grid grid-cols-3 sm:grid-cols-4 md:grid-cols-6 md:gap-2 gap-1 md:mt-4 mt-2"
 >
   <div
+    class="col-span-2 sm:col-span-3 md:col-span-5 flex flex-col justify-start items-stretch gap-2 md:gap-3 rounded-2xl bg-[#181833]"
+  >
+    <div
+      class="flex flex-wrap justify-between items-center md:gap-3 gap-2 md:p-5 p-3"
+    >
+      <span class="md:text-base text-xs font-normal text-white">List</span>
+
+      <div
+        class="flex flex-row justify-center items-center px-3 rounded-full bg-gray-600"
+      >
+        <a class="flex justify-center items-center" href="#">
+          <img src="assets/icons/search.svg" alt="" />
+        </a>
+        <input
+          class="input-2 focus:border-none focus:ring-0"
+          placeholder="Search"
+          type="text"
+        />
+      </div>
+    </div>
+
+    <div
+      class="max-h-[52vh] w-full flex justify-center items-center rounded-xl bg-[#181833] overflow-hidden"
+    >
+      <div class="h-full w-full relative overflow-x-auto px-2">
+        <table class="table-1">
+          <thead class="text-xs sticky top-0 bg-[#181833]">
+            <tr class="md:px-3 px-1">
+              <th scope="col" class="table-col">Asset name</th>
+              <th scope="col" class="table-col">Column1</th>
+              <th scope="col" class="table-col">Column2</th>
+              <th scope="col" class="table-col">Column3</th>
+              <th scope="col" class="table-col">Status</th>
+              <th scope="col" class="table-col">Column4</th>
+              <th scope="col" class="table-col"></th>
+              <th scope="col" class="table-col"></th>
+              <th scope="col" class="table-col"></th>
+            </tr>
+          </thead>
+
+          <tbody>
+            <!-- Make sure that you remove this *ngFor  -->
+            <tr *ngFor="let item of [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]">
+              <td class="table-col">Lorem ipsum dolor sit</td>
+              <td scope="col" class="table-col">Lorem ipsum</td>
+              <td scope="col" class="table-col">Lorem ipsum</td>
+              <td scope="col" class="table-col">Lorem ipsum</td>
+
+              <td class="table-col flex justify-start items-center">
+                <div
+                  class="flex flex-row justify-center items-center md:gap-2 gap-1"
+                >
+                  <div
+                    class="w-3 h-3 rounded-full border border-1-white bg-red-400"
+                  ></div>
+                  <span class="md:text-sm text-xs font-normal text-white"
+                    >hight</span
+                  >
+                </div>
+              </td>
+              <td scope="col" class="table-col">Lorem ipsum</td>
+              <th scope="col" class="table-col"></th>
+              <th scope="col" class="table-col"></th>
+              <td class="table-col">
+                <!-- TODO: Dropdown menu  -->
+                <button
+                  class="flex justify-center items-center w-6 h-6"
+                  type="button"
+                >
+                  <img src="assets/icons/three-dots-horsental.svg" alt="" />
+                </button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+  <div
+    *ngIf="false"
     class="col-span-2 sm:col-span-3 md:col-span-5 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 content-start gap-2 md:gap-3"
   >
     <div
