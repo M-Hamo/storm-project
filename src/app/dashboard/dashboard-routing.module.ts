@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { DashboardSideBarComponent } from 'src/layout/dashboard-side-bar/dashboard-side-bar.component';
+import { AffectedAssetsComponent } from './attack-surface/affected-assets/affected-assets.component';
 import { AssetsComponent } from './attack-surface/assets/assets.component';
 import { VulnerabilitiesComponent } from './attack-surface/vulnerabilities/vulnerabilities.component';
 import { DashboardLayoutComponent } from './dashboard-layout.component';
@@ -13,7 +14,7 @@ const routes: Routes = [
     children: [
       {
         path: '',
-        redirectTo: 'assets',
+        redirectTo: 'affected-assets',
         pathMatch: 'full',
       },
       {
@@ -24,6 +25,11 @@ const routes: Routes = [
       {
         path: 'vulnerabilities',
         component: VulnerabilitiesComponent,
+        title: 'Vulnerabilities',
+      },
+      {
+        path: 'affected-assets',
+        component: AffectedAssetsComponent,
         title: 'Vulnerabilities',
       },
     ],
@@ -40,5 +46,6 @@ export class DashboardRoutingModule {
     DashboardSideBarComponent,
     AssetsComponent,
     VulnerabilitiesComponent,
+    AffectedAssetsComponent,
   ];
 }
