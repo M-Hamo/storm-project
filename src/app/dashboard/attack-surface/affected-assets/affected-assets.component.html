@@ -124,7 +124,7 @@
               <th scope="col" class="table-col">Column2</th>
               <th scope="col" class="table-col">Column3</th>
               <th scope="col" class="table-col">Status</th>
-              <th scope="col" class="table-col">Column 4</th>
+              <th scope="col" class="table-col">Column4</th>
               <th scope="col" class="table-col"></th>
               <th scope="col" class="table-col"></th>
               <th scope="col" class="table-col"></th>
@@ -169,6 +169,49 @@
             </tr>
           </tbody>
         </table>
+      </div>
+    </div>
+  </div>
+
+  <div
+    *ngIf="false"
+    class="col-span-2 sm:col-span-3 md:col-span-5 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 content-start gap-2 md:gap-3"
+  >
+    <div
+      class="min-h-[112px] relative flex flex-col justify-start items-stretch gap-1 md:pb-2 pb-1 rounded-md overflow-hidden bg-[#0e0e29]"
+    >
+      <!-- TODO: Change bg color based on the filter which the filter you clicked -->
+      <div class="h-1 bg-orange-400"></div>
+      <div
+        class="flex flex-row justify-between items-center md:px-2 px-1 cursor-pointer"
+      >
+        <div class="flex justify-start items-center md:gap-2 gap-1">
+          <img class="w-7 h-7" src="assets/icons/big-data.svg" />
+          <span class="md:text-base text-xs font-medium text-gray-200"
+            >Asset 1</span
+          >
+        </div>
+        <!-- TODO: Toggle to show more or less information -->
+        <img class="w-[18px] h-[18px]" src="assets/icons/more.svg" />
+        <!-- <img
+          class="w-[18px] h-[18px]"
+          src="assets/icons/less.svg"
+        /> -->
+      </div>
+
+      <p
+        class="break-all ms:text-sm text-xs text-start text-gray-200 md:px-2 px-1"
+      >
+        lorem ipsum is simply dummy text of the printing and typesetting
+        industry.
+      </p>
+
+      <!-- TODO: Toggle to Expand this sections (Description) -->
+      <div
+        class="bg-[#0e0e29] break-all ms:text-sm text-xs text-start text-gray-200 md:px-2 px-1"
+      >
+        lorem ipsum is simply dummy text of the printing and typesetting
+        industry.
       </div>
     </div>
   </div>
