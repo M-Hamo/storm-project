@@ -9,76 +9,71 @@ export class DashboardSideBarComponent {
   public sideMenu = [
     {
       icon: 'assets/icons/Group 12099.svg',
-      router: 'router',
       opened: true,
       chields: [
         {
           icon: 'assets/icons/node.svg',
-          router: '/layout/dashboard/assets',
+          path: '/layout/dashboard/assets',
         },
         {
           icon: 'assets/icons/shield (1).svg',
-          router: '/layout/dashboard/vulnerabilities',
+          path: '/layout/dashboard/vulnerabilities',
         },
         {
           icon: 'assets/icons/data (1).svg',
-          router: '/layout/dashboard/affected-assets',
+          path: '/layout/dashboard/affected-assets',
         },
         {
           icon: 'assets/icons/information (1).svg',
-          router: '',
+          path: '/',
         },
       ],
     },
     {
       icon: 'assets/icons/Group 18.svg',
-      router: 'router',
       opened: false,
       chields: [
         {
           icon: 'assets/icons/shield (1).svg',
-          router: '',
+          path: '/',
         },
         {
           icon: 'assets/icons/information (1).svg',
-          router: '',
+          path: '/',
         },
         {
           icon: 'assets/icons/folder-hidden-white.svg',
-          router: '',
+          path: '/',
         },
       ],
     },
     {
       icon: 'assets/icons/Group 12101.svg',
-      router: 'router',
       opened: false,
       chields: [
         {
           icon: 'assets/icons/shield (1).svg',
-          router: '',
+          path: '/',
         },
       ],
     },
     {
       icon: 'assets/icons/Group 12102.svg',
-      router: 'router',
       opened: false,
       chields: [
         {
           icon: 'assets/icons/shield (1).svg',
-          router: '',
+          path: '/',
         },
       ],
     },
     {
       icon: 'assets/icons/Page-1.svg',
-      router: 'router',
       opened: false,
       chields: [
         {
           icon: 'assets/icons/shield (1).svg',
-          router: '',
+          path: '/',
         },
       ],
     },

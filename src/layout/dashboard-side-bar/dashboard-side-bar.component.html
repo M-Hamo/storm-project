@@ -18,15 +18,21 @@
         </button>
       </div>
 
-      <div *ngIf="item?.opened" class="md:mt-3 mt-1 px-2">
+      <div
+        *ngIf="item?.opened"
+        class="md:mt-3 mt-1 px-2 ease-in-out duration-100"
+      >
         <div
           class="w-full flex flex-col justify-center items-center md:gap-2 gap-0"
         >
           <ng-container *ngFor="let child of item.chields">
             <a
-              [routerLink]="child.router"
-              routerLinkActive="bg-[#5252e2]"
+              [routerLink]="child.path"
+              routerLinkActive
+              #rla="routerLinkActive"
+              [routerLinkActiveOptions]="{ exact: true }"
               class="flex justify-center items-center cursor-pointer p-[5px] rounded-md"
+              [ngClass]="rla.isActive ? 'bg-[#5252e2]' : 'bg-[#20203B]'"
             >
               <img class="sm:w-6 w-5 sm:h-6 h-5" [src]="child.icon" alt="" />
             </a>
