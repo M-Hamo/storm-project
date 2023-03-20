@@ -73,7 +73,7 @@ export class DashboardSideBarComponent {
       chields: [
         {
           icon: 'assets/icons/shield (1).svg',
-          path: '/',
+          path: '/layout/dashboard/dark-web',
         },
       ],
     },

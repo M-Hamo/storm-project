@@ -4,6 +4,7 @@ import { DashboardSideBarComponent } from 'src/layout/dashboard-side-bar/dashboa
 import { AffectedAssetsComponent } from './attack-surface/affected-assets/affected-assets.component';
 import { AssetsComponent } from './attack-surface/assets/assets.component';
 import { VulnerabilitiesComponent } from './attack-surface/vulnerabilities/vulnerabilities.component';
+import { DarkWebComponent } from './dark-web/dark-web.component';
 import { DashboardLayoutComponent } from './dashboard-layout.component';
 
 const routes: Routes = [
@@ -32,6 +33,11 @@ const routes: Routes = [
         component: AffectedAssetsComponent,
         title: 'Vulnerabilities',
       },
+      {
+        path: 'dark-web',
+        component: DarkWebComponent,
+        title: 'Dark web',
+      },
     ],
   },
 ];
@@ -47,5 +53,6 @@ export class DashboardRoutingModule {
     AssetsComponent,
     VulnerabilitiesComponent,
     AffectedAssetsComponent,
+    DarkWebComponent,
   ];
 }
