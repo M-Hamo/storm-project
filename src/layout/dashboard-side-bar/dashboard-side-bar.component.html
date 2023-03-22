@@ -5,7 +5,7 @@
     <ng-container
       *ngFor="let item of sideMenu; let isLast = last; let i = index"
     >
-      <div id="accordion-open-heading-1" class="px-2">
+      <div class="px-2">
         <button
           type="button"
           class="flex justify-center items-center"
@@ -44,9 +44,58 @@
     </ng-container>
   </div>
 
-  <div class="menu-content max-h-[72vh]">
-    <div class="w-full h-full flex justify-start items-stretch">
-      <div></div>
+  <div class="menu-content">
+    <div class="w-full h-full flex flex-col justify-start items-stretch">
+      <ng-container
+        *ngFor="let item of sideMenu; let isLast = last; let i = index"
+      >
+        <button
+          class="sm:h-8 h-6 flex justify-between items-center rounded mx-2"
+          type="button"
+          (click)="onToggleTab(i)"
+        >
+          <span
+            class="text-white sm:text-base text-xs sm:font-normal font-extralight break-words"
+          >
+            {{ item?.title }}
+          </span>
+          <img class="w-[18px] h-[18px]" src="assets/icons/more.svg" />
+        </button>
+
+        <div
+          *ngIf="item?.opened"
+          class="md:mt-3 mt-1 px-2 ease-in-out duration-100"
+        >
+          <div
+            class="w-full flex flex-col justify-center items-stretch md:gap-2 gap-0"
+          >
+            <a
+              *ngFor="let child of item.chields"
+              [routerLink]="child.path"
+              routerLinkActive
+              #rla="routerLinkActive"
+              [routerLinkActiveOptions]="{ exact: true }"
+              class="mx-2 flex justify-start items-center cursor-pointer p-[5px] text-white shadow-md rounded-md"
+              [ngClass]="
+                rla.isActive
+                  ? ' bg-gray-500 shadow-md'
+                  : 'bg-gray-600 shadow-none'
+              "
+            >
+              <span
+                class="sm:h-6 h-5 sm:text-sm text-xs sm:font-normal font-extralight break-words"
+              >
+                {{ child?.title }}
+              </span>
+            </a>
+          </div>
+        </div>
+
+        <div
+          *ngIf="!isLast"
+          class="md:my-2 my-1 w-full h-[1px] bg-gray-800"
+        ></div>
+      </ng-container>
     </div>
   </div>
 </section>
