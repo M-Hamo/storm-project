@@ -1,9 +1,6 @@
-<section class="relative top-0 h-full w-auto pt-[6vh]">
+<section class="relative side-menu top-0 h-full w-auto pt-[6vh]">
   <div
-    id="accordion-open"
     class="max-h-[72vh] overflow-y-auto sticky top-[70px] py-2 rounded-r-[4px] bg-[#070723]"
-    data-active-classes="bg-transparent"
-    data-accordion="collapse"
   >
     <ng-container
       *ngFor="let item of sideMenu; let isLast = last; let i = index"
@@ -45,5 +42,11 @@
         class="md:my-2 my-1 w-full h-[1px] bg-gray-800"
       ></div>
     </ng-container>
+  </div>
+
+  <div class="menu-content max-h-[72vh]">
+    <div class="w-full h-full flex justify-start items-stretch">
+      <div></div>
+    </div>
   </div>
 </section>

@@ -1,0 +1,11 @@
+.menu-content {
+    @apply absolute top-[6vh] sm:left-12 left-10 hidden min-w-[250px]
+     bg-gray-600 text-white shadow-md z-50 rounded-r-[4px] p-2
+     
+     ;
+}
+
+
+.side-menu:hover .menu-content {
+    @apply block;
+}
