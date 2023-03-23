@@ -24,13 +24,13 @@ export class DashboardSideBarComponent {
         },
         {
           icon: 'assets/icons/data (1).svg',
-          title: 'Github leaks',
+          title: 'Disclosed Information',
           path: '/layout/dashboard/affected-assets',
         },
         {
           icon: 'assets/icons/information (1).svg',
-          title: 'Disclosed Information',
-          path: '/',
+          title: 'Github leaks',
+          path: '/layout/dashboard/github-leaks',
         },
       ],
     },

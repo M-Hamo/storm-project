@@ -6,6 +6,7 @@ import { AssetsComponent } from './attack-surface/assets/assets.component';
 import { VulnerabilitiesComponent } from './attack-surface/vulnerabilities/vulnerabilities.component';
 import { DarkWebComponent } from './dark-web/dark-web.component';
 import { DashboardLayoutComponent } from './dashboard-layout.component';
+import { GithubLeaksComponent } from './attack-surface/github-leaks/github-leaks.component';
 
 const routes: Routes = [
   {
@@ -38,6 +39,11 @@ const routes: Routes = [
         component: DarkWebComponent,
         title: 'Dark web',
       },
+      {
+        path: 'github-leaks',
+        component: GithubLeaksComponent,
+        title: 'Github leaks',
+      },
     ],
   },
 ];
@@ -54,5 +60,6 @@ export class DashboardRoutingModule {
     VulnerabilitiesComponent,
     AffectedAssetsComponent,
     DarkWebComponent,
+    GithubLeaksComponent,
   ];
 }

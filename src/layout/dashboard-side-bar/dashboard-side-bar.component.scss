@@ -1,6 +1,6 @@
 .menu-content {
   @apply absolute top-[6vh] sm:left-12 left-10 hidden  max-h-[72vh] min-w-[250px]
-     bg-gray-600 text-white shadow-md z-50 rounded-r-[4px] py-2 ease-in-out duration-100;
+     bg-gray-600 text-white shadow-md z-50 rounded-r-[4px] py-2 ease-in duration-300;
 }
 
 .side-menu:hover .menu-content {
