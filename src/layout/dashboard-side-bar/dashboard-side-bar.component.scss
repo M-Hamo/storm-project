@@ -4,5 +4,5 @@
 }
 
 .side-menu:hover .menu-content {
-  @apply block;
+  @apply sm:block hidden;
 }
