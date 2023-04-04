@@ -7,6 +7,7 @@ import { VulnerabilitiesComponent } from './attack-surface/vulnerabilities/vulne
 import { DarkWebComponent } from './dark-web/dark-web.component';
 import { DashboardLayoutComponent } from './dashboard-layout.component';
 import { GithubLeaksComponent } from './attack-surface/github-leaks/github-leaks.component';
+import { MainDashboardComponent } from './main-dashboard/main-dashboard.component';
 
 const routes: Routes = [
   {
@@ -46,6 +47,11 @@ const routes: Routes = [
       },
     ],
   },
+  {
+    path: 'main',
+    component: MainDashboardComponent,
+    title: 'Main dashboard',
+  },
 ];
 
 @NgModule({
@@ -61,5 +67,6 @@ export class DashboardRoutingModule {
     AffectedAssetsComponent,
     DarkWebComponent,
     GithubLeaksComponent,
+    MainDashboardComponent,
   ];
 }
