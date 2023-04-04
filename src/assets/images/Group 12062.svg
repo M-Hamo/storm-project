@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="332.531" height="219.143" viewBox="0 0 332.531 219.143">
+  <defs>
+    <filter id="fill" x="1.52" y="102.725" width="329.748" height="116.418" filterUnits="userSpaceOnUse">
+      <feOffset dy="7" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="5" result="blur"/>
+      <feFlood flood-opacity="0.2"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="line" x="0" y="101.461" width="332.531" height="64.047" filterUnits="userSpaceOnUse">
+      <feOffset dy="7" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="5" result="blur-2"/>
+      <feFlood flood-opacity="0.2"/>
+      <feComposite operator="in" in2="blur-2"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Group_12062" data-name="Group 12062" transform="translate(16.131)">
+    <rect id="bg" width="299.061" height="196" transform="translate(1.182)" opacity="0.08"/>
+    <g id="Chart" transform="translate(0 110.724)">
+      <g transform="matrix(1, 0, 0, 1, -16.13, -110.72)" filter="url(#fill)">
+        <path id="fill-2" data-name="fill" d="M-19059.605-19252.367v-45.049c30.422,3.566-5.109-2.186,41.324,5.258s128.639,18.854,161.928,25.975c2.2.863-4.967,3.754.58,1.7,9.225-3.418,41.047-13.168,48.994-15.879,26.539-9.047,46.922-17.049,46.922-17.049v84.814l-299.748,1.6Z" transform="translate(19076.13 19408.14)" fill="#6fddb8" opacity="0.1"/>
+      </g>
+      <g transform="matrix(1, 0, 0, 1, -16.13, -110.72)" filter="url(#line)">
+        <path id="line-2" data-name="line" d="M-19045.4-19297.416s173.389,24.66,208.246,31.783c59.711-21.16,91.891-31.783,91.891-31.783" transform="translate(19061.53 19408.14)" fill="none" stroke="#6fddb8" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      </g>
+    </g>
+    <g id="Hover" transform="translate(197.684 96.367)">
+      <g id="Chart_Hover" data-name="Chart Hover" transform="translate(0)">
+        <line id="Line_15" data-name="Line 15" y2="99.223" transform="translate(5.335)" fill="none" stroke="#fff" stroke-linecap="round" stroke-width="2" stroke-dasharray="0 6"/>
+        <circle id="point" cx="5.335" cy="5.335" r="5.335" transform="translate(0 40.898)" fill="#6fddb8" stroke="#313964" stroke-width="2"/>
+      </g>
+    </g>
+    <text id="Issues_Resolved" data-name="Issues Resolved" transform="translate(62.825 34)" fill="#fff" font-size="12" font-family="PTSans-Regular, PT Sans" opacity="0.7"><tspan x="0" y="0">Issues Resolved</tspan></text>
+    <text id="_20_" data-name="20%" transform="translate(7.182 34)" fill="#fff" font-size="26" font-family="PTSans-Regular, PT Sans"><tspan x="0" y="0">20%</tspan></text>
+    <text id="Increase_in_Average" data-name="Increase in Average" transform="translate(10.182 62.017)" fill="#00e965" font-size="10" font-family="PTSans-Regular, PT Sans"><tspan x="0" y="0">Increase in Average</tspan></text>
+    <g id="Min_Steps" data-name="Min Steps" transform="translate(10.771 130)">
+      <text id="_237" data-name="237" transform="translate(0 17)" fill="#f5f5f5" font-size="16" font-family="Poppins-Light, Poppins" font-weight="300"><tspan x="14" y="17">237</tspan></text>
+      <text id="MIN" transform="translate(13)" fill="#aaaeb3" font-size="10" font-family="Poppins-Regular, Poppins" letter-spacing="0.2em"><tspan x="3" y="11">Sep</tspan></text>
+      <text id="Steps" transform="translate(28 50)" fill="#f5f5f5" font-size="8" font-family="Poppins-Light, Poppins" font-weight="300"><tspan x="-26" y="0">Solved Issues</tspan></text>
+    </g>
+    <g id="Max_Steps" data-name="Max Steps" transform="translate(236.014 130)">
+      <text id="_9.376" data-name="9.376" transform="translate(0 17)" fill="#f5f5f5" font-size="16" font-family="Poppins-Light, Poppins" font-weight="300"><tspan x="7" y="17">9.376</tspan></text>
+      <text id="MAX" transform="translate(13)" fill="#aaaeb3" font-size="10" font-family="Poppins-Regular, Poppins" letter-spacing="0.2em"><tspan x="4" y="11">Oct</tspan></text>
+      <text id="Steps-2" data-name="Steps" transform="translate(28 50)" fill="#f5f5f5" font-size="8" font-family="Poppins-Light, Poppins" font-weight="300"><tspan x="-26" y="0">Solved Issues</tspan></text>
+    </g>
+  </g>
+</svg>
