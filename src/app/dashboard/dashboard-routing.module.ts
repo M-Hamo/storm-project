@@ -52,6 +52,11 @@ const routes: Routes = [
     component: MainDashboardComponent,
     title: 'Main dashboard',
   },
+  {
+    path: 'xss',
+    component: MainDashboardComponent,
+    title: 'Reflected cross-site scripting(XSS)',
+  },
 ];
 
 @NgModule({
