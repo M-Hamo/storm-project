@@ -8,6 +8,7 @@ import { DarkWebComponent } from './dark-web/dark-web.component';
 import { DashboardLayoutComponent } from './dashboard-layout.component';
 import { GithubLeaksComponent } from './attack-surface/github-leaks/github-leaks.component';
 import { MainDashboardComponent } from './main-dashboard/main-dashboard.component';
+import { XssComponent } from './xss/xss.component';
 
 const routes: Routes = [
   {
@@ -54,7 +55,7 @@ const routes: Routes = [
   },
   {
     path: 'xss',
-    component: MainDashboardComponent,
+    component: XssComponent,
     title: 'Reflected cross-site scripting(XSS)',
   },
 ];
@@ -73,5 +74,6 @@ export class DashboardRoutingModule {
     DarkWebComponent,
     GithubLeaksComponent,
     MainDashboardComponent,
+    XssComponent,
   ];
 }

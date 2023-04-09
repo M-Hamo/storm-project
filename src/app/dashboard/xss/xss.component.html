@@ -1,0 +1,145 @@
+<section class="h-full w-full md:px-3 py-3 px-2">
+  <section class="w-full flex justify-start items-center sm:gap-2 gap-1">
+    <a href="#"
+      ><img
+        class="w-5 h-5"
+        src="assets/icons/arrow-left-svgrepo-com.svg"
+        alt=""
+    /></a>
+    <h1 class="p-0 m-0 md:text-base text-xs font-medium text-white">
+      Reflected cross-site scripting(XSS)
+    </h1>
+  </section>
+
+  <section
+    class="w-full grid sm:grid-cols-2 grid-cols-1 justify-items-stretch rounded-2xl sm:gap-10 gap-1 md:p-4 p-2 mt-2 bg-[#13132e] text-gray-300"
+  >
+    <div class="flex flex-col justify-start items-stretch md:gap-4 gap-2">
+      <div class="flex flex-col justify-start items-start gap-1">
+        <h2 class="p-0 m-0 md:text-base text-xs font-medium text-white">
+          Affected Asset(s)
+        </h2>
+
+        <div class="w-full max-h-[100px] overflow-y-auto">
+          <!-- TODO: loop here to show affected assets -->
+          <div class="w-full text-xs font-normal truncate underline mb-1">
+            <a href=""> https://site.com/page.php?id=1 </a>
+          </div>
+
+          <div class="w-full text-xs font-normal truncate underline mb-1">
+            <a href=""> https://blog.site.com/news.php?id=1 </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="flex flex-col justify-start items-start gap-1">
+        <h2 class="p-0 m-0 md:text-base text-xs font-normal text-white">
+          Affected Asset(s)
+        </h2>
+
+        <p class="text-xs font-normal">
+          We noticed that the <<span>application_name</span>> application is
+          vulnerable to reflected Cross-Site Scripting (XSS) attacks. It is
+          possible to inject JavaScript code into the application due to a lack
+          of sufficient input filtering. This allows an attacker to inject code
+          that will later be executed by legitimate users when they are tricked
+          into opening a malicious link sent by the attacker. This would allow
+          an attacker to perform unauthorized actions in the application on
+          behalf of legitimate users or spread malware via the application.
+        </p>
+      </div>
+
+      <div class="flex flex-col justify-start items-start gap-1">
+        <h2 class="p-0 m-0 md:text-base text-xs font-medium text-white">
+          Remediation Steps
+        </h2>
+
+        <div class="w-full max-h-[200px] overflow-y-auto">
+          <!-- TODO: loop here to show affected assets -->
+          <div
+            class="w-full flex flex-row justify-start items-center gap-1 text-xs font-normal truncate mb-2"
+          >
+            <span>-</span>Lorem ipsum dolor sit amet, consectetur
+          </div>
+
+          <div
+            class="w-full flex flex-row justify-start items-center gap-1 text-xs font-normal truncate mb-2"
+          >
+            <span>-</span>Lorem ipsum dolor sit amet, consectetur
+          </div>
+
+          <div
+            class="w-full flex flex-row justify-start items-center gap-1 text-xs font-normal truncate mb-2"
+          >
+            <span>-</span>Lorem ipsum dolor sit amet, consectetur
+          </div>
+
+          <div
+            class="w-full flex flex-row justify-start items-center gap-1 text-xs font-normal truncate mb-2"
+          >
+            <span>-</span>Lorem ipsum dolor sit amet, consectetur
+          </div>
+
+          <div
+            class="w-full flex flex-row justify-start items-center gap-1 text-xs font-normal truncate mb-2"
+          >
+            <span>-</span>Lorem ipsum dolor sit amet, consectetur
+          </div>
+
+          <div
+            class="w-full flex flex-row justify-start items-center gap-1 text-xs font-normal truncate mb-2"
+          >
+            <span>-</span>Lorem ipsum dolor sit amet, consectetur
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="flex flex-col justify-start items-stretch md:gap-4 gap-2">
+      <div class="flex flex-col justify-start items-start gap-1">
+        <h2 class="p-0 m-0 md:text-base text-xs font-medium text-white">
+          Severity
+        </h2>
+
+        <div class="flex flex-row justify-start items-end md:gap-5 gap-2">
+          <!-- TODO: change with chart -->
+          <img src="assets/images/Mask Group 1.png" alt="" />
+          <div class="flex justify-start items-center md:gap-3 gap-2">
+            <span class="h-3 w-5 bg-orange-400"></span>
+            <span class="ms:text-sm text-xs font-normal">5.4 (Medium)</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="flex flex-col justify-start items-start gap-1">
+        <h2 class="p-0 m-0 md:text-base text-xs font-normal text-white">
+          Impact
+        </h2>
+
+        <p class="text-xs font-normal">
+          Successful exploitation could allow an attacker to perform actions on
+          behalf of the application users such as reading sensitive information
+          (PII), update or delete data from the application on behalf of
+          legitimate users or spread malware via the application. However, the
+          malicious code affects only users who are tricked into accessing the
+          malicious link.
+        </p>
+      </div>
+
+      <div class="flex flex-col justify-start items-start gap-1">
+        <h2 class="p-0 m-0 md:text-base text-xs font-medium text-white">
+          Proof of Concept
+        </h2>
+
+        <div class="w-full max-h-[100px] overflow-y-auto">
+          <!-- TODO: loop here to show affected assets -->
+          <div class="w-full text-xs font-normal truncate underline mb-1">
+            <a href=""
+              >https://site.com/page.php?id=1<<span>script</span>>alert(1)<<span>/script</span>>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</section>
