@@ -32,7 +32,7 @@
       <a
         class="w-auto h-5 flex justify-center items-center gap-1 rounded-md hover:cursor-pointer p-3"
       >
-        <span class="h-3 w-5 bg-red-500"></span>
+        <span class="h-3 w-5 bg-red-600"></span>
         <span class="md:text-sm text-xs font-normal text-gray-400">hight</span>
         <!-- <span class="md:text-sm text-xs font-normal text-gray-600">hight</span> -->
       </a>
@@ -40,21 +40,21 @@
       <a
         class="w-auto h-5 flex justify-center items-center gap-1 rounded-md hover:cursor-pointer p-3"
       >
-        <span class="h-3 w-5 bg-orange-400"></span>
+        <span class="h-3 w-5 bg-orange-600"></span>
         <span class="md:text-sm text-xs font-normal text-gray-400">medium</span>
       </a>
 
       <a
         class="w-auto h-5 flex justify-center items-center gap-1 rounded-md hover:cursor-pointer p-3"
       >
-        <span class="h-3 w-5 bg-blue-400"></span>
+        <span class="h-3 w-5 bg-blue-500"></span>
         <span class="md:text-sm text-xs font-normal text-gray-400">low</span>
       </a>
 
       <a
         class="w-auto h-5 flex justify-center items-center gap-1 rounded-md hover:cursor-pointer p-3"
       >
-        <span class="h-3 w-5 bg-green-400"></span>
+        <span class="h-3 w-5 bg-green-500"></span>
         <span class="md:text-sm text-xs font-normal text-gray-400"
           >no Issues</span
         >
@@ -91,6 +91,7 @@
   class="w-full grid grid-cols-3 sm:grid-cols-4 md:grid-cols-6 md:gap-2 gap-1 md:mt-4 mt-2"
 >
   <div
+    *ngIf="false"
     class="col-span-2 sm:col-span-3 md:col-span-5 flex flex-col justify-start items-stretch gap-2 md:gap-3 rounded-2xl bg-[#181833]"
   >
     <div
@@ -174,14 +175,14 @@
   </div>
 
   <div
-    *ngIf="false"
+    *ngIf="true"
     class="col-span-2 sm:col-span-3 md:col-span-5 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 content-start gap-2 md:gap-3"
   >
     <div
       class="min-h-[112px] relative flex flex-col justify-start items-stretch gap-1 md:pb-2 pb-1 rounded-md overflow-hidden bg-[#0e0e29]"
     >
       <!-- TODO: Change bg color based on the filter which the filter you clicked -->
-      <div class="h-1 bg-orange-400"></div>
+      <div class="h-2 bg-red-600 border-b-[2px] border-[#303049]"></div>
       <div
         class="flex flex-row justify-between items-center md:px-2 px-1 cursor-pointer"
       >
