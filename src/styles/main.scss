@@ -247,8 +247,8 @@ summary {
 }
 
 .input-2 {
-  @apply md:px-3 px-1 w-full text-sm text-gray-100 bg-gray-600 placeholder:text-gray-300
-   rounded-lg border border-none focus:ring-[#5252E2] focus:border-[#5252E2];
+  @apply h-[37px] md:px-3 px-1  w-full text-sm text-gray-100 bg-gray-600 placeholder:text-gray-300
+   rounded-lg border border-none focus:ring-[#5252E2] focus:border-[#5252E2] outline-none focus:border-none;
 }
 
 /*************   Tables   *****************/
@@ -284,4 +284,12 @@ summary {
   .hide-with-small {
     display: none;
   }
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  -webkit-transition-delay: 9999s;
+  transition-delay: 9999s;
 }
