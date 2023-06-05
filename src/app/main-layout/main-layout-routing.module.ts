@@ -15,6 +15,7 @@ import { MembersComponent } from '../members/members.component';
 import { ReportsComponent } from '../reports/reports.component';
 import { SupportComponent } from '../support/support.component';
 import { MainLayoutComponent } from './main-layout/main-layout.component';
+import { ComingSoonComponent } from 'src/components/coming-soon/coming-soon.component';
 
 const routes: Routes = [
   {
@@ -92,6 +93,10 @@ const routes: Routes = [
           ),
         title: 'Login',
       },
+      {
+        path: 'coming-soon',
+        component: ComingSoonComponent,
+      },
     ],
   },
 ];
@@ -117,5 +122,6 @@ export class MainLayoutRoutingModule {
     ReportsComponent,
     AccountSettingsComponent,
     NoAssessmentsComponent,
+    ComingSoonComponent,
   ];
 }
