@@ -16,6 +16,7 @@ import { ReportsComponent } from '../reports/reports.component';
 import { SupportComponent } from '../support/support.component';
 import { MainLayoutComponent } from './main-layout/main-layout.component';
 import { ComingSoonComponent } from 'src/components/coming-soon/coming-soon.component';
+import { StormAnalyzerComponent } from '../storm-analyzer/storm-analyzer.component';
 
 const routes: Routes = [
   {
@@ -94,6 +95,10 @@ const routes: Routes = [
         title: 'Login',
       },
       {
+        path: 'storm-analyzer',
+        component: StormAnalyzerComponent,
+      },
+      {
         path: 'coming-soon',
         component: ComingSoonComponent,
       },
@@ -123,5 +128,6 @@ export class MainLayoutRoutingModule {
     AccountSettingsComponent,
     NoAssessmentsComponent,
     ComingSoonComponent,
+    StormAnalyzerComponent,
   ];
 }

@@ -1,0 +1,267 @@
+<section class="md:py-5 md:px-8 py-3 px-4">
+  <section class="w-full flex flex-wrap justify-evenly items-center gap-2">
+    <div
+      class="flex flex-wrap justify-start items-center sm:gap-8 gap-2 rounded-md py-2 px-4 bg-[#070723] sm:text-sm text-xs font-normal text-gray-400"
+    >
+      <!-- TODO: To active tap add the fallowing class =>  bg-[#5252E2] text-white-->
+      <a
+        class="h-7 flex justify-center items-center py-3 sm:px-4 px-1 rounded-md hover:cursor-pointer"
+      >
+        Critical Path
+      </a>
+
+      <a
+        class="w-auto h-7 flex justify-center items-center py-3 sm:px-4 px-1 rounded-md hover:cursor-pointer bg-[#5252E2] text-white"
+      >
+        Attack Graph
+      </a>
+
+      <a
+        class="w-auto h-7 flex justify-center items-center py-3 sm:px-4 px-1 rounded-md hover:cursor-pointer"
+      >
+        What If Analysis
+      </a>
+    </div>
+
+    <button
+      class="h-10 flex justify-center items-center text-white sm:text-sm text-xs font-normal bg-[#5252E2] rounded-md py-2 px-4"
+    >
+      <span>Try Storm Simulator</span>
+    </button>
+  </section>
+
+  <section
+    class="w-100 grid sm:grid-cols-6 grid-cols-1 justify-items-stretch sm:gap-4 gap-3 sm:mt-4 mt-2"
+  >
+    <div
+      class="min-h-[64vh] flex flex-col justify-start items-stretch sm:col-span-4 rounded-md bg-[#303049]"
+    >
+      <div
+        class="flex flex-wrap justify-between items-center gap-2 sm:py-3 py-2 sm:px-5 px-2 border-b-[.5px] border-gray-600"
+      >
+        <div class="flex justify-center items-center gap-2">
+          <span class="sm:text-sm text-xs font-normal text-gray-200">
+            Filter Shapes :
+          </span>
+          <!-- TODO: Set Dropdown here -->
+          <button
+            data-dropdown-toggle="shapesDropdowns"
+            class="sm:w-40 w-36 flex justify-between items-center gap-3 py-3 px-3 bg-[#222260] rounded-lg"
+            type="button"
+          >
+            <span class="text-xs font-normal text-white">Select Shapes</span>
+
+            <img
+              class="h-[12px] w-[12px]"
+              src="assets/icons/Group 11729.svg"
+              alt=""
+            />
+          </button>
+
+          <div
+            id="shapesDropdowns"
+            class="sm:w-40 w-36 z-10 hidden bg-[#222260] divide-y divide-gray-100 rounded-lg shadow dark:bg-gray-700"
+          >
+            <ul
+              class="w-full flex flex-col justify-start items-stretch text-sm text-gray-100 dark:text-gray-200"
+              aria-labelledby="dropdownDefaultButton"
+            >
+              <li>
+                <label
+                  for="checked-rectangle"
+                  class="w-full flex justify-between items-center rounded-t-lg px-4 py-3 hover:bg-[#070723] cursor-pointer border-b-[.5px] border-[#393986]"
+                >
+                  <img
+                    class="h-6 w-6"
+                    src="assets/icons/rectangle.svg"
+                    alt="rectangle" />
+
+                  <input
+                    id="checked-rectangle"
+                    type="checkbox"
+                    value=""
+                    class="w-[14px] h-[14px] text-transparent border-2 border-gray-400 rounded-[4px] ring-gray-400 ring-1 focus:ring-0 bg-transparent"
+                /></label>
+              </li>
+
+              <li>
+                <label
+                  for="rhombus"
+                  class="w-full flex justify-between items-center px-4 py-3 hover:bg-[#070723] cursor-pointer border-b-[.5px] border-[#393986]"
+                >
+                  <img
+                    class="h-6 w-6"
+                    src="assets/icons/rhombus.svg"
+                    alt="rectangle" />
+
+                  <input
+                    id="rhombus"
+                    type="checkbox"
+                    value=""
+                    class="w-[14px] h-[14px] text-transparent border-2 border-gray-400 rounded-[4px] ring-gray-400 ring-1 focus:ring-0 bg-transparent"
+                /></label>
+              </li>
+
+              <li>
+                <label
+                  for="circle"
+                  class="w-full flex justify-between items-center rounded-b-lg px-4 py-3 hover:bg-[#070723] cursor-pointer"
+                >
+                  <img
+                    class="h-6 w-6"
+                    src="assets/icons/circle.svg"
+                    alt="rectangle" />
+
+                  <input
+                    id="circle"
+                    type="checkbox"
+                    value=""
+                    class="w-[14px] h-[14px] text-transparent border-2 border-gray-400 rounded-[4px] ring-gray-400 ring-1 focus:ring-0 bg-transparent"
+                /></label>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="flex justify-center items-center gap-2">
+          <span class="sm:text-sm text-xs font-normal text-gray-200">
+            Shapes type :
+          </span>
+          <!-- TODO: Set Dropdown here -->
+
+          <button
+            data-dropdown-toggle="shapesTypesDropdown"
+            class="sm:w-40 w-36 flex justify-between items-center gap-3 py-3 px-3 bg-[#222260] rounded-lg"
+            type="button"
+          >
+            <span class="text-xs font-normal text-white">Select a Type</span>
+
+            <img
+              class="h-[12px] w-[12px]"
+              src="assets/icons/Group 11729.svg"
+              alt=""
+            />
+          </button>
+
+          <div
+            id="shapesTypesDropdown"
+            class="sm:w-40 w-36 z-10 hidden bg-[#222260] divide-y divide-gray-100 rounded-lg shadow dark:bg-gray-700"
+          >
+            <ul
+              class="w-full flex flex-col justify-start items-stretch text-sm text-gray-100 dark:text-gray-200"
+              aria-labelledby="dropdownDefaultButton"
+            >
+              <li>
+                <label
+                  for="checked-rectangle"
+                  class="w-full flex justify-between items-center rounded-t-lg px-4 py-3 hover:bg-[#070723] cursor-pointer border-b-[.5px] border-[#393986]"
+                >
+                  <img
+                    class="h-6 w-6"
+                    src="assets/icons/rectangle.svg"
+                    alt="rectangle" />
+
+                  <input
+                    id="checked-rectangle"
+                    type="checkbox"
+                    value=""
+                    class="w-[14px] h-[14px] text-transparent border-2 border-gray-400 rounded-[4px] ring-gray-400 ring-1 focus:ring-0 bg-transparent"
+                /></label>
+              </li>
+
+              <li>
+                <label
+                  for="rhombus"
+                  class="w-full flex justify-between items-center px-4 py-3 hover:bg-[#070723] cursor-pointer border-b-[.5px] border-[#393986]"
+                >
+                  <img
+                    class="h-6 w-6"
+                    src="assets/icons/rhombus.svg"
+                    alt="rectangle" />
+
+                  <input
+                    id="rhombus"
+                    type="checkbox"
+                    value=""
+                    class="w-[14px] h-[14px] text-transparent border-2 border-gray-400 rounded-[4px] ring-gray-400 ring-1 focus:ring-0 bg-transparent"
+                /></label>
+              </li>
+
+              <li>
+                <label
+                  for="circle"
+                  class="w-full flex justify-between items-center rounded-b-lg px-4 py-3 hover:bg-[#070723] cursor-pointer"
+                >
+                  <img
+                    class="h-6 w-6"
+                    src="assets/icons/circle.svg"
+                    alt="rectangle" />
+
+                  <input
+                    id="circle"
+                    type="checkbox"
+                    value=""
+                    class="w-[14px] h-[14px] text-transparent border-2 border-gray-400 rounded-[4px] ring-gray-400 ring-1 focus:ring-0 bg-transparent"
+                /></label>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <button
+          class="rounded-full flex flex-col justify-center items-center gap-[6px]"
+        >
+          <img
+            class="w-4 h-4"
+            src="assets/icons/fullscreen-svgrepo-com.svg"
+            alt="Full screen"
+          />
+          <span class="text-[10px] font-normal text-gray-400">Full Screen</span>
+        </button>
+      </div>
+
+      <div class="flex-grow flex justify-center items-center">
+        <span class="text-5xl text-white">Graph</span>
+      </div>
+    </div>
+
+    <div
+      class="sm:col-span-2 rounded-md h-full max-h-[64vh] relative overflow-y-auto bg-[#303049]"
+    >
+      <table
+        class="w-full md:text-sm text-xs md:font-normal font-light text-left text-gray-100"
+      >
+        <thead class="text-xs sticky top-0 bg-[#3e3e54]">
+          <tr class="md:px-3 px-1">
+            <th class="md:px-4 px-2 md:py-3 py-2">Index</th>
+            <th class="md:px-4 px-2 md:py-3 py-2">Description</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <!-- TODO: To active one of this rows add the following classes => (text-orange-500 bg-[#39345d])  -->
+          <tr class="border-b-[.5px] border-gray-600 cursor-pointer">
+            <td
+              class="border-r-[.5px] border-gray-600 md:px-4 px-2 md:py-3 py-2 text-center"
+            >
+              1
+            </td>
+            <td class="md:px-4 px-2 md:py-3 py-2">
+              Lurem Ipsum dolar set dummy data
+            </td>
+          </tr>
+          <tr class="border-b-[.5px] border-gray-600 cursor-pointer">
+            <td
+              class="border-r-[.5px] border-gray-600 md:px-4 px-2 md:py-3 py-2 text-center"
+            >
+              2
+            </td>
+            <td class="md:px-4 px-2 md:py-3 py-2">
+              Lurem Ipsum dolar set dummy data
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+</section>
