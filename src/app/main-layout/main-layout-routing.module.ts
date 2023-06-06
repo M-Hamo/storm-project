@@ -17,6 +17,10 @@ import { SupportComponent } from '../support/support.component';
 import { MainLayoutComponent } from './main-layout/main-layout.component';
 import { ComingSoonComponent } from 'src/components/coming-soon/coming-soon.component';
 import { StormAnalyzerComponent } from '../storm-analyzer/storm-analyzer.component';
+import { SignUpKeyComponent } from '../email-templates/sign-up-key/sign-up-key.component';
+import { ResetPasswordComponent } from '../email-templates/reset-password/reset-password.component';
+import { IssueEmailComponent } from '../email-templates/issue-email/issue-email.component';
+import { ChangePasswordComponent } from '../email-templates/change-password/change-password.component';
 
 const routes: Routes = [
   {
@@ -102,6 +106,22 @@ const routes: Routes = [
         path: 'coming-soon',
         component: ComingSoonComponent,
       },
+      {
+        path: 'email-template-sign-up',
+        component: SignUpKeyComponent,
+      },
+      {
+        path: 'reset-password',
+        component: ResetPasswordComponent,
+      },
+      {
+        path: 'issue-email',
+        component: IssueEmailComponent,
+      },
+      {
+        path: 'change-password',
+        component: ChangePasswordComponent,
+      },
     ],
   },
 ];
@@ -129,5 +149,9 @@ export class MainLayoutRoutingModule {
     NoAssessmentsComponent,
     ComingSoonComponent,
     StormAnalyzerComponent,
+    SignUpKeyComponent,
+    ResetPasswordComponent,
+    IssueEmailComponent,
+    ChangePasswordComponent,
   ];
 }
