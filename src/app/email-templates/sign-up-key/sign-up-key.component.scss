@@ -113,10 +113,15 @@ p {
   font-weight: 200;
 }
 
-.verification-code span {
-  padding: 10px 18px;
-  border: 2px solid #5252e2;
-  border-radius: 20px;
+.verification-link {
+  font-size: smaller;
+  font-weight: 200;
+}
+
+.verification-link .link {
+  margin-left: 10px;
+  text-decoration: none !important;
+  color: #32a6ff;
 }
 
 .expire-msg {
