@@ -22,7 +22,7 @@ const routes: Routes = [
       import('./main-layout/main-layout.module').then(
         (m) => m.MainLayoutModule
       ),
-    title: 'Login',
+    title: 'Layout',
   },
 ];
 
