@@ -32,8 +32,8 @@ table td {
 }
 
 /* -------------------------------------
-      BODY & CONTAINER
-  ------------------------------------- */
+  BODY & CONTAINER
+------------------------------------- */
 
 .body {
   position: relative;
@@ -58,6 +58,7 @@ table td {
 
 /* Set a max-width, and make it display as block so it will automatically stretch to that width, but will also shrink down on a phone or something */
 .container {
+  min-height: 80vh !important;
   display: block;
   margin: 0 auto !important;
   /* makes it centered */
@@ -65,13 +66,11 @@ table td {
   padding: 30px 10px;
   width: 700px;
 }
-
 /* -------------------------------------
-      HEADER, FOOTER, MAIN
-  ------------------------------------- */
+  HEADER, FOOTER, MAIN
+------------------------------------- */
 
 .content {
-  min-height: 75vh !important;
   position: relative;
   box-sizing: border-box;
   display: block;
@@ -110,14 +109,13 @@ p {
   font-weight: 200;
 }
 
-.verify-link a {
+a.button {
   width: 100px !important;
   padding: 10px 20px;
   border-radius: 20px;
   font-size: 13px;
   color: #ffffff;
   background-color: #5252e2;
-
   display: inline-block;
   line-height: 20px;
   text-align: center;
@@ -176,8 +174,8 @@ p {
 }
 
 /* -------------------------------------
-      TYPOGRAPHY
-  ------------------------------------- */
+  TYPOGRAPHY
+------------------------------------- */
 h1,
 h2,
 h3,
@@ -206,6 +204,7 @@ ol {
   margin: 0;
   margin-bottom: 15px;
 }
+
 p li,
 ul li,
 ol li {
@@ -214,27 +213,30 @@ ol li {
 }
 
 /* -------------------------------------
-      BUTTONS
-  ------------------------------------- */
+  BUTTONS
+------------------------------------- */
 .btn {
   box-sizing: border-box;
   width: 100%;
 }
+
 .btn > tbody > tr > td {
   padding-bottom: 15px;
 }
+
 .btn table {
   min-width: auto;
   width: auto;
 }
+
 .btn table td {
   border-radius: 5px;
   text-align: center;
 }
 
 /* -------------------------------------
-      OTHER STYLES THAT MIGHT BE USEFUL
-  ------------------------------------- */
+  OTHER STYLES THAT MIGHT BE USEFUL
+------------------------------------- */
 .last {
   margin-bottom: 0;
 }
@@ -284,13 +286,14 @@ ol li {
 }
 
 /* -------------------------------------
-      RESPONSIVE AND MOBILE FRIENDLY STYLES
-  ------------------------------------- */
+  RESPONSIVE AND MOBILE FRIENDLY STYLES
+------------------------------------- */
 @media only screen and (max-width: 620px) {
   table[class="body"] h1 {
     font-size: 28px !important;
     margin-bottom: 10px !important;
   }
+
   table[class="body"] ul,
   table[class="body"] ol,
   table[class="body"] td,
@@ -298,27 +301,34 @@ ol li {
   table[class="body"] a {
     font-size: 12px !important;
   }
+
   table[class="body"] .wrapper,
   table[class="body"] .article {
     padding: 10px !important;
   }
+
   table[class="body"] .content {
     padding: 0 !important;
   }
+
   table[class="body"] .container {
     width: 100% !important;
   }
+
   table[class="body"] .main {
     border-left-width: 0 !important;
     border-radius: 0 !important;
     border-right-width: 0 !important;
   }
+
   table[class="body"] .btn table {
     width: 100% !important;
   }
+
   table[class="body"] .btn a {
     width: 100% !important;
   }
+
   table[class="body"] .img-responsive {
     height: auto !important;
     max-width: 100% !important;
@@ -327,12 +337,13 @@ ol li {
 }
 
 /* -------------------------------------
-      PRESERVE THESE STYLES IN THE HEAD
-  ------------------------------------- */
+  PRESERVE THESE STYLES IN THE HEAD
+------------------------------------- */
 @media all {
   .ExternalClass {
     width: 100%;
   }
+
   .ExternalClass,
   .ExternalClass p,
   .ExternalClass span,
@@ -341,6 +352,7 @@ ol li {
   .ExternalClass div {
     line-height: 100%;
   }
+
   .apple-link a {
     color: inherit !important;
     font-family: inherit !important;
