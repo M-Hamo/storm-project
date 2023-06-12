@@ -19,15 +19,12 @@ body {
 
 table {
   border-collapse: separate;
-  mso-table-lspace: 0pt;
-  mso-table-rspace: 0pt;
   min-width: 100%;
   width: 100%;
 }
 
 table td {
   position: relative;
-  //   z-index: 99 !important;
   font-family: "Poppins";
   font-size: 14px;
   vertical-align: top;
@@ -78,9 +75,9 @@ table td {
   position: relative;
   box-sizing: border-box;
   display: block;
-  margin: 30px 0 auto;
+  margin: 30px 0 auto !important;
   max-width: 700px;
-  padding: 10px;
+  padding: 10px !important;
 }
 
 .main {
@@ -113,15 +110,19 @@ p {
   font-weight: 200;
 }
 
-.verification-link {
-  font-size: smaller;
-  font-weight: 200;
-}
+.verify-link a {
+  width: 100px !important;
+  padding: 10px 20px;
+  border-radius: 20px;
+  font-size: 13px;
+  color: #ffffff;
+  background-color: #5252e2;
 
-.verification-link .link {
-  margin-left: 10px;
-  text-decoration: none !important;
-  color: #32a6ff;
+  display: inline-block;
+  line-height: 20px;
+  text-align: center;
+  text-decoration: none;
+  -webkit-text-size-adjust: none;
 }
 
 .expire-msg {
@@ -274,7 +275,6 @@ ol li {
   max-width: 0;
   opacity: 0;
   overflow: hidden;
-  mso-hide: all;
   visibility: hidden;
   width: 0;
 }
@@ -306,7 +306,6 @@ ol li {
     padding: 0 !important;
   }
   table[class="body"] .container {
-    // padding: 50px 0 !important;
     width: 100% !important;
   }
   table[class="body"] .main {
