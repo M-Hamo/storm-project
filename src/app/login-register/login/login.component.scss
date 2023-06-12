@@ -1,0 +1,3 @@
+.user-name:focus ~ .user-name-label {
+  transform: scale(0.75) translateY(-25px) !important;
+}
