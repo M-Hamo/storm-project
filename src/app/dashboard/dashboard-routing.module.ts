@@ -9,6 +9,10 @@ import { DashboardLayoutComponent } from './dashboard-layout.component';
 import { GithubLeaksComponent } from './attack-surface/github-leaks/github-leaks.component';
 import { MainDashboardComponent } from './main-dashboard/main-dashboard.component';
 import { XssComponent } from './xss/xss.component';
+import { ScanConfigurationComponent } from './scan-configuration/scan-configuration.component';
+import { DepartmentDetailsComponent } from './department-details/department-details.component';
+import { AssetsNamesComponent } from './assets/assets.component';
+import { WebVurnelbilityComponent } from './web-vurnelbility/web-vurnelbility.component';
 
 const routes: Routes = [
   {
@@ -46,6 +50,26 @@ const routes: Routes = [
         component: GithubLeaksComponent,
         title: 'Github leaks',
       },
+      {
+        path: 'scan-configuration',
+        component: ScanConfigurationComponent,
+        title: 'Scan Configuration',
+      },
+      {
+        path: 'department-details',
+        component: DepartmentDetailsComponent,
+        title: 'Department details',
+      },
+      {
+        path: 'assets-name',
+        component: AssetsNamesComponent,
+        title: 'Department details',
+      },
+      {
+        path: 'web-vulnerabilities',
+        component: WebVurnelbilityComponent,
+        title: 'Web vulnerabilities',
+      },
     ],
   },
   {
@@ -75,5 +99,9 @@ export class DashboardRoutingModule {
     GithubLeaksComponent,
     MainDashboardComponent,
     XssComponent,
+    ScanConfigurationComponent,
+    DepartmentDetailsComponent,
+    AssetsNamesComponent,
+    WebVurnelbilityComponent,
   ];
 }
